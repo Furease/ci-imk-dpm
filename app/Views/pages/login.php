@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DPM Login</title>
+    <link rel="icon" type="image/png" href="https://dpm.stis.ac.id/assets/img/profile/dpm.png">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+
+</head>
+
+<body style="background: linear-gradient(244.04deg, rgba(255, 255, 255, 0.27) 10.63%, rgba(15, 121, 193, 0.15) 104.94%), #FFFFFF;
+    background-image: url('img/login-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+">
+    <div class="container">
+        <div class="row justify-content-center">
+            <input type="hidden" name="login_error" data-flashdata="" id="login_error">
+
+            <div class="row">
+                <div class="col-lg-6 d-none d-lg-block align-self-center">
+                    <img class="img-fluid" src="https://dpm.stis.ac.id/assets/img/profile/dpm.svg" alt="Dewan Perwakilan Mahasiswa">
+                </div>
+                <div class="col-lg-6">
+                    <div class="card m-4 p-5 shadow-sm">
+                        <div class="text-center mb-2">
+                            <h1>Selamat datang, Aspician!</h1>
+                            <span>Silakan masuk dengan akun Sipadu</span>
+                        </div>
+                        <div class="text-center">
+                            <img class="window-btn" style="width: 10rem;" src="img/sipadu.png" href="#" data-toggle="modal" data-target="#modalLoginAdmin" alt="Tombol admin">
+                        </div>
+                        <form class="user">
+                            <div class="form-group">
+                                <!-- <label for="nim">NIM</label> -->
+                                <input type="email" class="form-control  border-top-0 border-right-0 border-left-0 border-dark" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." style="border-radius: 0;">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control border-top-0 border-right-0 border-left-0 border-dark" id="exampleInputPassword" placeholder="Password" style="border-radius: 0;">
+                            </div>
+                            <!-- <div class="form-group">
+                                <div class="custom-control custom-checkbox small">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck">
+                                    <label class="custom-control-label" for="customCheck">Remember
+                                        Me</label>
+                                </div>
+                            </div> -->
+                            <a href="beranda" class="btn btn-primary btn-block mt-4">
+                                Login
+                            </a>
+                            <hr>
+                        </form>
+                        <div class="text-center">
+                            <div>
+                                <h6>Atau masuk dengan akun DPM</h6>
+                                <img class="window-btn" style="width: 8rem;" src="https://dpm.stis.ac.id/images-cm/icons/group-1s.svg" href="#" data-toggle="modal" data-target="#modalLoginAdmin" alt="Tombol admin">
+                            </div>
+                            <div>
+
+                                <!-- <img class="window-btn" src="https://dpm.stis.ac.id/images-cm/icons/group-2.svg"
+                    onclick="open_window_sipadu()" alt="Tombol sipadu" width="65%"> -->
+                                <!-- <img class="window-btn" src="https://dpm.stis.ac.id/images-cm/icons/group-2.svg"
+                                onclick="window.location.href='../index.html';" alt="Tombol sipadu" width="65%"> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="sticky-footer">
+        <div class="container my-auto">
+            <div class="text-center my-auto">
+                <span>© 2023 Dewan Perwakilan Mahasiswa STIS</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalLoginAdmin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Silahkan Masukkan Akun DPM</h1>
+                            </div>
+
+                            <form class="user" method="post" action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="nim" name="nim" autofocus placeholder="E-mail Address" value="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-google btn-user btn-block">
+                                    Login
+                                </button>
+                            </form>
+                            <p class="text-center text-info pt-3"><a href="#">Lupa password?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function open_window_sipadu() {
+            sipadu_window = window.open("https://dpm.stis.ac.id/oauth/redirector", "sipadu",
+                "height=700,width=700,status=no,titlebar=no,menubar=no,top=10,left=300", true);
+        }
+
+        function verification(data1, data2) {
+            sipadu_window.close();
+            $.ajax({
+                url: "https://dpm.stis.ac.id/auth/verifSipadu",
+                type: "POST",
+                data: {
+                    'data1': data1,
+                    'data2': data2
+                },
+                global: false,
+                async: false,
+                success: function(result) {
+                    if (result) {
+                        window.location = "https://dpm.stis.ac.id/dpm";
+                    }
+                }
+            });
+        }
+
+        if ('-' == 1) {
+            open_window_sipadu();
+        }
+    </script>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.bootstrap.newsbox.min"></script>
+
+    <!-- SWEET ALERT -->
+    <script src="swal/sweetalert2.all.min.js"></script>
+    <script src="swal/myscript.js"></script>
+
+</body>
+
+</html>
