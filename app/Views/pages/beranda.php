@@ -9,7 +9,7 @@
         <div class="media-body">
             <div class="media mt-3">
                 <div class="media-body">
-                    <h3 class="mx-0"><b>Selamat datang,</b> </h3>
+                    <h2 class="mx-0"><b>Selamat datang,</b> </h2>
                     <h4 class="mb-3"> Douglas McGee </h4>
                     <!-- <i>Mari berkenalan bersama kami.</i>
                                     <p>

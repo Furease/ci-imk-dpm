@@ -19,7 +19,7 @@
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="user.html">
+                <a class="dropdown-item" href="user">
                     <i class="fas fa-fw fa-id-badge mr-2 text-gray-400"></i> My Profile
                 </a>
                 <div class="dropdown-divider"></div>

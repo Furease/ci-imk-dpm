@@ -23,26 +23,26 @@
 
             <!-- Nav Item - Dashboard -->
 
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+            <li class="nav-item <?= ($currentURI == 'beranda') ? 'active' : ''; ?>">
+                <a class="nav-link" href="beranda">
                     <i class="fas fa-fw fa-home"></i>
                     <span>Beranda</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="profile_dpm.html">
+            <li class="nav-item <?= ($currentURI == 'profil-dpm') ? 'active' : ''; ?>">
+                <a class="nav-link" href="profil-dpm">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Profil DPM</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="arsip.html">
+            <li class="nav-item <?= ($currentURI == 'arsip') ? 'active' : ''; ?>">
+                <a class="nav-link" href="arsip">
                     <i class="fas fa-fw fa-folder-open"></i>
                     <span>Arsip Dokumen</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="galeri.html">
+            <li class="nav-item <?= ($currentURI == 'galeri') ? 'active' : ''; ?>">
+                <a class="nav-link" href="galeri">
                     <i class="fas fa-fw fa-image"></i>
                     <span>Galeri DPM</span>
                 </a>
@@ -58,8 +58,8 @@
             </div>
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="aspirasi.html">
+            <li class="nav-item <?= ($currentURI == 'aspirasi') ? 'active' : ''; ?>">
+                <a class="nav-link" href="aspirasi">
                     <i class="fas fa-fw fa-bullhorn"></i>
                     <span>Aspirasi</span>
                 </a>

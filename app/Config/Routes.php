@@ -31,6 +31,11 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/beranda', 'Home::beranda');
+$routes->get('/profil-dpm', 'Home::profil_dpm');
+$routes->get('/arsip', 'Home::arsip');
+$routes->get('/galeri', 'Home::galeri');
+$routes->get('/aspirasi', 'Home::aspirasi');
+$routes->get('/user', 'Home::user');
 
 /*
  * --------------------------------------------------------------------
