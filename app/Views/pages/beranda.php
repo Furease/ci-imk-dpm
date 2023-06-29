@@ -37,7 +37,7 @@
     </div>
 
     <p>
-        <small>420 sambatan</small>
+        <b>420 sambatan</b>
     </p>
 
     <!-- Card Content -->
@@ -121,7 +121,7 @@
                                 Pengurus Tingkat</div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
-                                    <div class="mb-0 mr-3 text-gray-800">
+                                    <div class="mb-0 mr-3 font-weight-bold text-gray-800">
                                         3 sambatan
                                     </div>
                                 </div>
@@ -140,14 +140,33 @@
 
         <div class="col-sm-auto align-self-center"><b>Berita DPM</b></div>
         <div class="col align-self-center border-top border-primary d-none d-sm-block"></div>
-        <div class="col-sm-auto align-self-center dropdown">
+        <div class="col-sm-auto align-self-center dropdown my-2">
             <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Periode
+                Bulan
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">2022/2023</a>
-                <a class="dropdown-item" href="#">2021/2022</a>
-                <a class="dropdown-item" href="#">2020/2021</a>
+                <a class="dropdown-item" href="#">Januari</a>
+                <a class="dropdown-item" href="#">Februari</a>
+                <a class="dropdown-item" href="#">Maret</a>
+                <a class="dropdown-item" href="#">April</a>
+                <a class="dropdown-item" href="#">Mei</a>
+                <a class="dropdown-item" href="#">Juni</a>
+                <a class="dropdown-item" href="#">Juli</a>
+                <a class="dropdown-item" href="#">Agustus</a>
+                <a class="dropdown-item" href="#">September</a>
+                <a class="dropdown-item" href="#">Oktober</a>
+                <a class="dropdown-item" href="#">November</a>
+                <a class="dropdown-item" href="#">Desember</a>
+            </div>
+        </div>
+        <div class="col-sm-auto align-self-center dropdown">
+            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tahun
+            </button>
+            <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">2020</a>
+                <a class="dropdown-item" href="#">2021</a>
+                <a class="dropdown-item" href="#">2022</a>
             </div>
         </div>
     </div>
@@ -173,7 +192,7 @@
                         </p>
                         <ul class="list-group list-group-flush">
                             <li class="bg-birulaut list-group-item align-self-center">
-                                <button type="button" class="border border-light badge badge-primary view" data-target="#tampilPengumumanAdminModal" data-alt="SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS T.A. 2022/2023" data-toggle="modal">Selengkapnya</button>
+                                <button type="button" class="border-0 p-2 badge badge-primary view" data-target="#tampilPengumumanAdminModal" data-alt="SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS T.A. 2022/2023" data-toggle="modal">Selengkapnya</button>
                             </li>
                         </ul>
                     </div>
