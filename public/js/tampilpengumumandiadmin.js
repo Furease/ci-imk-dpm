@@ -7,7 +7,7 @@ $(document).ready(function () {
 	// 	$(".popup_image").attr("alt", alt);
 	// });
 	// $("#tampilPengumumanModal").modal("show");
-	$('.collapse-button').click( function () {
-		$(this).children('i').toggleClass('fa-chevron-circle-up fa-chevron-circle-right');
-	  });
+	$('.accordion-profile-dpm .card-header button').click( function () {
+		$(this).find('.col i').toggleClass('fa-chevron-circle-up fa-chevron-circle-right');
+	});
 });

@@ -24,7 +24,7 @@
  */
 
 .cf {
-    *zoom: 1;
+    zoom: 1;
 }
 
 
@@ -41,14 +41,12 @@ body {
     padding: 0 20px;
 }
 
-a:focus {
-    /* outline: 2px dashed #525252; */
-}
 
 @media screen and (max-width: 767px) {
     .content {
         padding: 0 20px;
     }
+
 }
 
 ul.struktur {
@@ -61,13 +59,13 @@ ul.struktur {
 ul.struktur a.struktur {
     display: block;
     background: rgb(124, 207, 255);
-    border: 4px solid #525252;
+    border-radius: 5px;
     text-align: center;
     overflow: hidden;
-    font-size: .7em;
+    font-size: 1em;
     text-decoration: none;
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
     height: 70px;
     margin-bottom: -26px;
     box-shadow: 4px 4px 9px -4px rgba(0, 0, 0, 0.4);
@@ -78,7 +76,7 @@ ul.struktur a.struktur {
 
 @media print {
     ul.struktur a.struktur {
-        border: 4px solid #000;
+        border: 1px solid #1F1F1F;
     }
 }
 
@@ -92,6 +90,7 @@ ul.struktur a.struktur span.struktur {
     top: 50%;
     margin-top: -0.7em;
     display: block;
+
 }
 
 ul.departments li.department span.struktur {
@@ -108,7 +107,9 @@ ul.departments li.department span.struktur {
 }
 
 .director>li.struktur>a.struktur {
-    width: 50%;
+    color: #ffffff;
+    background-color: #4E73DF;
+    width: 30%;
     margin: 0 auto 0px auto;
 }
 
@@ -116,17 +117,28 @@ ul.departments li.department span.struktur {
     content: "";
     display: block;
     width: 0;
-    height: 130px;
-    background: red;
-    border-left: 4px solid #525252;
+    height: 160px;
+    border-left: 1px solid #1F1F1F;
     left: 50%;
     z-index: 8;
     position: relative;
 }
 
+.ketua:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 40px;
+    border-left: 1px solid #1F1F1F;
+    left: 50%;
+    z-index: 8;
+    position: relative;
+}
+
+
 @media print {
     .subdirector:after {
-        border-left: 4px solid #000;
+        border-left: 1px solid #1F1F1F;
     }
 }
 
@@ -138,53 +150,59 @@ ul.departments li.department span.struktur {
 
 .subdirector>li.struktur:first-child,
 .departments>li.struktur:first-child {
-    width: 18.59894921190893%;
+    width: 25%;
     height: 64px;
     margin: 0 auto 92px auto;
     padding-top: 25px;
-    border-bottom: 4px solid #525252;
+    border-top: 1px solid #1F1F1F;
     z-index: 1;
 }
 
 @media print {
     .subdirector>li.struktur:first-child,
     .departments>li.struktur:first-child {
-        border-bottom: 4px solid #000;
+        border-bottom: 1px solid #1F1F1F;
     }
 }
 
 .subdirector>li.struktur:first-child {
     float: right;
-    right: 27.2%;
-    border-left: 4px solid #525252;
+    right: 24.8%;
+    top: 30px;
+    border-right: 1px solid #1F1F1F;
 }
 
 @media print {
     .subdirector>li.struktur:first-child {
-        border-left: 4px solid black;
+        border-left: 1px solid #1F1F1F;
     }
 }
 
 .departments>li.struktur:first-child {
     float: left;
-    left: 27.2%;
+    left: 25%;
     top: -130px;
-    border-right: 4px solid #525252;
+    border-left: 1px solid #1F1F1f;
 }
 
 @media print {
     .departments>li.struktur:first-child {
-        border-right: 4px solid black;
+        border-right: 1px solid #1F1F1F;
     }
 }
 
 .subdirector>li.struktur:first-child a,
 .departments>li.struktur:first-child a {
     width: 100%;
+    background-color: #7D9EFF;
+}
+
+.departments>li.struktur:first-child a{
+    left: -50%;
 }
 
 .subdirector>li.struktur:first-child a {
-    left: 25px;
+    left: 50%;
 }
 
 @media screen and (max-width: 767px) {
@@ -203,6 +221,7 @@ ul.departments li.department span.struktur {
         left: 10%;
         margin-left: 2px;
     }
+    
 }
 
 .departments>li.struktur:first-child a {
@@ -220,37 +239,40 @@ ul.departments li.department span.struktur {
     content: "";
     display: block;
     position: absolute;
-    width: 81.1%;
+    width: 75%;
     height: 26px;
-    border-top: 4px solid #525252;
-    border-right: 4px solid #525252;
-    border-left: 4px solid #525252;
+    border-top: 1px solid #1F1F1F;
+    /* border-right: 1px solid #1F1F1F; */
     margin: 0 auto;
     top: 0px;
-    left: 7.3%
+    left: 10.7%
 }
 
+@media screen and (max-width: 768px) {
+    .departments:after{
+        width: 70%;
+        margin-left: 9px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .department:last-child:before{
+        left: 42px;
+    }
+}
 @media print {
     .departments:after {
-        border-top: 4px solid #000;
-        border-right: 4px solid #000;
-        border-left: 4px solid #000;
+        border-top: 1px solid #1F1F1F;
+        border-right: 1px solid #1F1F1F;
+        border-left: 1px solid #1F1F1F;
     }
 }
 
-@media screen and (max-width: 767px) {
-    .departments:after {
-        border-right: none;
-        left: 0;
-        width: 49.8%;
-    }
-}
 
 @media screen and (min-width: 768px) {
-    .department:first-child:before,
-    .department:last-child:before {
-        border: none;
+    .modal-dialog{
+        margin-left:25%;
     }
+    
 }
 
 .department:before {
@@ -259,21 +281,44 @@ ul.departments li.department span.struktur {
     position: absolute;
     width: 0;
     height: 22px;
-    border-left: 4px solid #525252;
+    border-left: 1px solid #1F1F1F;
     z-index: 1;
     top: -22px;
     left: 50%;
     margin-left: -4px;
 }
+.department.dep-b::before,.department.dep-e::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 142px;
+    border-left: 1px solid #1F1F1F;
+    z-index: 1;
+    top: -142px;
+    left: 50%;
+    margin-left: -4px;
+}
 
+.department.dep-b,.department.dep-e{
+    position: relative;
+    top:-14px;
+}
+.department.dep-c,.department.dep-f{
+    position: relative;
+    left:-25px;
+}
+.department.dep-d,.department.dep-a{
+    position: relative;
+    right:-25px;
+}
 @media print {
     .department:before {
-        border-left: 4px solid black;
+        border-left: 1px solid #ff0000;
     }
 }
 
 .department {
-    border-left: 4px solid #525252;
     width: 15%;
     top: -134px;
     float: left;
@@ -283,7 +328,7 @@ ul.departments li.department span.struktur {
 
 @media print {
     .department {
-        border-left: 4px solid #000;
+        border-left: 1px solid #1F1F1F;
     }
 }
 
@@ -291,28 +336,7 @@ ul.departments li.department span.struktur {
     width: 18.25%;
 }
 
-@media screen and (max-width: 767px) {
-    .department {
-        float: none;
-        width: 100%;
-        margin-left: 0;
-    }
-    .department:before {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 0;
-        height: 60px;
-        border-left: 4px solid #525252;
-        z-index: 1;
-        top: -60px;
-        left: 0%;
-        margin-left: -4px;
-    }
-    .department:nth-child(2):before {
-        display: none;
-    }
-}
+
 
 .department>a.struktur {
     margin: 0 0 -26px -4px;
@@ -323,10 +347,6 @@ ul.departments li.department span.struktur {
     opacity: 0.8;
 }
 
-.department i.fas {
-    font-size: 2vh;
-}
-
 .department>ul.struktur {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -334,13 +354,13 @@ ul.departments li.department span.struktur {
 
 .department li.struktur {
     padding-left: 25px;
-    border-bottom: 4px solid #525252;
+    border-bottom: 1px solid #1F1F1F;
     height: 80px;
 }
 
 @media print {
     .department li.struktur {
-        border-bottom: 4px solid #000;
+        border-bottom: 1px solid #1F1F1F;
     }
 }
 
@@ -377,27 +397,28 @@ ul.departments li.department span.struktur {
 /* Department/ section colors */
 
 .department.dep-a a.struktur {
-    background: #AAD4E7;
+    background: #72BBFF;
 }
 
 .department.dep-b a.struktur {
-    background: #AAD4E7;
+    background: #72BBFF;
 }
 
 .department.dep-c a.struktur {
-    background: #AAD4E7;
+    background: #72BBFF;
 }
 
 .department.dep-d a.struktur {
-    background: #AAD4E7;
+    background: #72BBFF;
 }
 
 .department.dep-e a.struktur {
-    background: #AAD4E7;
+    background: #72BBFF;
 }
 
 .department.dep-f a.struktur {
-    background: #AAD4E7;
+    background: #72BBFF;
+    left: -10%;
 }
 
 .name-person {
@@ -411,10 +432,12 @@ ul.departments li.department span.struktur {
 }
 
 .photo-person {
-    max-width: 60%;
-    height: 200px;
+    width: 247.28px;
+height: 287.738px;
     box-shadow: 4px 4px 9px -4px rgb(0 0 0 / 60%);
-    border-radius: 2px;
+    border-bottom : 0;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
 }
 
 .photo-person:hover {
@@ -468,4 +491,87 @@ ul.departments li.department span.struktur {
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+
+.modal-title h3{
+    font-weight: bold;
+    color: black;
+}
+
+.modal-dialog{
+    max-width: 782px;
+}
+.modal-content{
+    border-radius: 10px;
+    border: 0;
+}
+.modal-header{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #dbdbdb;
+    align-content: center;
+}
+
+.modal-body{
+    background-color: #eaeaea;    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+hr{
+    border-top: 1px solid #A6B6E5;
+}
+.popup-footer{
+    text-align: center;
+    color: white;
+    background-color: #4E73DF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.popup-footer p{
+    margin-bottom: 0;
+}
+.nim{
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-family: Barlow;
+    font-weight: lighter;
+    font-style: italic;
+}
+.nama{
+    color: #FFF;
+text-align: center;
+font-size: 15px;
+font-family: Raleway;
+font-weight: bold;
+}
+
+.accordion-profile-dpm {
+    .card{
+        border:0;
+    }
+    .card-header{
+        display: flex;
+        justify-content: center;
+    }      
+    .card-body{
+        width: 75%; 
+        margin: 0 auto 0 auto;  
+    }  
+}
+
+.modal-header .close{
+    padding: 0 2px 0 0;
+}
+
+.btn-arsip{
+    background-color: #CDDAFFCC;
+    color: #4E73DF;
+    opacity: 80%;
+
+}
+.btn-arsip:hover{
+    background-color: #CDDAFFCC;
+    color: #4E73DF;
+    opacity: 40%;
 }
