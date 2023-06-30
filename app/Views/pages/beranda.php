@@ -209,7 +209,6 @@
                 <div class="card bg-birulaut border-0 p-2">
                     <div class="text-center img-fluid crop">
                         <img class="card-img-top" src="https://dpm.stis.ac.id/assets/img/pengumuman/WhatsApp_Image_2023-02-18_at_14_18_44.jpeg" alt="">
-                        <img class="card-img-top" src="https://dpm.stis.ac.id/assets/img/pengumuman/WhatsApp_Image_2023-02-18_at_14_18_44.jpeg" alt="">
                     </div>
                     <div class="card-body">
                         <h6 id="news-title" class="text-center">PERINGATAN ISRA' MI'RAJ NABI
