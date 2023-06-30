@@ -7,7 +7,7 @@
                     <!-- <i class="fas fa-bullhorn"></i> -->
                     <img class="img-profile rounded-circle" width="50px" src="img/dpm.png">
                 </div>
-                <div class="sidebar-brand-text mx-3">Si Aspiman</div>
+                <div class="sidebar-brand-text mx-3">DPM STIS</div>
             </a>
 
             <!-- Divider -->
