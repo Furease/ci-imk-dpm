@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="https://dpm.stis.ac.id/assets/img/profile/dpm.png">
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
@@ -28,54 +28,86 @@
     background-attachment: fixed;
     background-size: cover;
 ">
-    <div class="container">
-        <div class="row justify-content-center">
+    <div class="container" style="align-items: center; height: 100vh">
+        <div class="flex">
             <input type="hidden" name="login_error" data-flashdata="" id="login_error">
 
             <div class="row">
                 <div class="col-lg-6 d-none d-lg-block align-self-center">
-                    <img class="img-fluid" src="https://dpm.stis.ac.id/assets/img/profile/dpm.svg" alt="Dewan Perwakilan Mahasiswa">
+                    <img class="img-fluid" src="https://dpm.stis.ac.id/assets/img/profile/dpm.svg" alt="Dewan Perwakilan Mahasiswa" width="75%">
                 </div>
                 <div class="col-lg-6">
                     <div class="card m-4 p-5 shadow-sm">
                         <div class="text-center mb-2">
                             <h1>Selamat datang, Aspician!</h1>
-                            <span>Silakan masuk dengan akun Sipadu</span>
+
                         </div>
-                        <div class="text-center">
-                            <img class="window-btn" style="width: 10rem;" src="img/sipadu.png" href="#" data-toggle="modal" data-target="#modalLoginAdmin" alt="Tombol admin">
-                        </div>
-                        <form class="user">
-                            <div class="form-group">
-                                <!-- <label for="nim">NIM</label> -->
-                                <input type="email" class="form-control  border-top-0 border-right-0 border-left-0 border-dark" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." style="border-radius: 0;">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control border-top-0 border-right-0 border-left-0 border-dark" id="exampleInputPassword" placeholder="Password" style="border-radius: 0;">
-                            </div>
-                            <!-- <div class="form-group">
+                        <div id="container" style="height:auto; overflow: auto;">
+                            <div id="tab-1" id="content">
+                                <span>Silakan masuk dengan akun Sipadu</span>
+                                <div class="text-center">
+                                    <img id="login-sipadu" class="window-btn" style="width: 10rem;" src="img/sipadu.png" alt="Tombol admin">
+                                </div>
+                                <form class="user">
+                                    <div class="form-group">
+                                        <!-- <label for="nim">NIM</label> -->
+                                        <input type="email" class="form-control  border-top-0 border-right-0 border-left-0" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." style="border-radius: 0; border-bottom-width: medium">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control border-top-0 border-right-0 border-left-0" id="exampleInputPassword" placeholder="Password" style="border-radius: 0; border-bottom-width: medium">
+                                    </div>
+                                    <!-- <div class="form-group">
                                 <div class="custom-control custom-checkbox small">
                                     <input type="checkbox" class="custom-control-input" id="customCheck">
                                     <label class="custom-control-label" for="customCheck">Remember
                                         Me</label>
                                 </div>
                             </div> -->
-                            <a href="beranda" class="btn btn-primary btn-block mt-4">
-                                Login
-                            </a>
-                            <hr>
-                        </form>
-                        <div class="text-center">
-                            <div>
-                                <h6>Atau masuk dengan akun DPM</h6>
-                                <img class="window-btn" style="width: 8rem;" src="https://dpm.stis.ac.id/images-cm/icons/group-1s.svg" href="#" data-toggle="modal" data-target="#modalLoginAdmin" alt="Tombol admin">
-                            </div>
-                            <div>
+                                    <a href="beranda" class="btn btn-primary btn-block mt-4">
+                                        Login
+                                    </a>
+                                    <hr>
+                                </form>
+                                <div class="text-center">
+                                    <div>
+                                        <h6>Atau masuk dengan akun DPM</h6>
+                                        <img id="login-dpm" class="window-btn" style="width: 6rem;" src="https://dpm.stis.ac.id/images-cm/icons/group-1s.svg" alt="Tombol admin">
+                                    </div>
 
-                                <!-- <img class="window-btn" src="https://dpm.stis.ac.id/images-cm/icons/group-2.svg"
+
+                                    <!-- <img class="window-btn" src="https://dpm.stis.ac.id/images-cm/icons/group-2.svg"
                     onclick="open_window_sipadu()" alt="Tombol sipadu" width="65%"> -->
-                                <!-- <img class="window-btn" src="https://dpm.stis.ac.id/images-cm/icons/group-2.svg"
+                                    <!-- <img class="window-btn" src="https://dpm.stis.ac.id/images-cm/icons/group-2.svg"
                                 onclick="window.location.href='../index.html';" alt="Tombol sipadu" width="65%"> -->
+                                </div>
+                            </div>
+                            <div id="tab-2" class="" style="display: none;">
+                                <span>Silakan masuk dengan akun DPM</span>
+                                <br>
+                                <br>
+                                <div class="text-center">
+                                    <img id="login-dpm-2" class="window-btn" style="width: 6rem;" src="https://dpm.stis.ac.id/images-cm/icons/group-1s.svg" alt="Tombol admin">
+                                </div>
+                                <br>
+                                <form class="user">
+                                    <div class="form-group">
+                                        <!-- <label for="nim">NIM</label> -->
+                                        <input type="email" class="form-control  border-top-0 border-right-0 border-left-0" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." style="border-radius: 0; border-bottom-width: medium">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control border-top-0 border-right-0 border-left-0" id="exampleInputPassword" placeholder="Password" style="border-radius: 0; border-bottom-width: medium">
+                                    </div>
+                                    <a href="beranda" class="btn btn-primary btn-block mt-4">
+                                        Login
+                                    </a>
+                                    <hr>
+                                </form>
+                                <div class="text-center">
+                                    <div>
+                                        <h6>Atau masuk dengan akun Sipadu</h6>
+                                        <img id="login-sipadu-2" class="window-btn" style="width: 10rem;" src="img/sipadu.png" alt="Tombol admin">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -83,15 +115,17 @@
             </div>
 
         </div>
+
+        <footer class="container sticky-footer">
+            <div class=" my-auto">
+                <div class="text-center my-auto">
+                    <span>© 2023 Dewan Perwakilan Mahasiswa STIS</span>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <footer class="sticky-footer">
-        <div class="container my-auto">
-            <div class="text-center my-auto">
-                <span>© 2023 Dewan Perwakilan Mahasiswa STIS</span>
-            </div>
-        </div>
-    </footer>
+
 
     <div class="modal fade" id="modalLoginAdmin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -159,20 +193,33 @@
     </script>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/jquery/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="assets/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script src="js/jquery.bootstrap.newsbox.min"></script>
+    <!-- <script src="js/jquery.bootstrap.newsbox.min"></script> -->
 
     <!-- SWEET ALERT -->
     <script src="swal/sweetalert2.all.min.js"></script>
     <script src="swal/myscript.js"></script>
+
+    <script>
+        // Change the content and animate the scroll to the bottom
+        $('#login-dpm').click(function() {
+            $('#tab-2').show(500);
+            $('#tab-1').hide(500);
+        });
+
+        $('#login-sipadu-2').click(function() {
+            $('#tab-1').show(500);
+            $('#tab-2').hide(500);
+        });
+    </script>
 
 </body>
 
