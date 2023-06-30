@@ -201,80 +201,101 @@
             </div>
         </div>
 
-        <!-- <div class="col-lg-4 col-md-6">
-                            <div class="card bg-transparent border-light">
-                                <div class="card border-primary mb-3">
-                                    <div class="text-center img-fluid">
-                                        <img class="card-img-top rounded-lg"
-                                            src="https://dpm.stis.ac.id/assets/img/pengumuman/WhatsApp_Image_2023-02-18_at_14_18_44.jpeg"
-                                            alt="" width="100">
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title text-center card-header">PERINGATAN ISRA' MI'RAJ NABI
-                                            MUHAMMAD SAW 1444 H</h4>
-                                        <p class="card-text">Assalamualaikum Warahmatullahi Wabarakatuh Halo rekan-rekan
-                                            Aspician Malam 27 Rajab merupakan salah satu bukti dari kebesaran Allah SWT.
-                                            Melalui kuasa-Nya, Rasullah menempuh perjalan spiritual dengan jarak ribuan
-                                            kilometer dari Masjidil Haram ke Masjidil Aqsa dan dilanjutkan ke Sidratul
-                                            Muntaha. Perjalanan yang menembus langit ketujuh itu hanya ditempuh dalam
-                                            waktu satu malam atas kekuasaan Allah SWT. Persitiwa Isra
-                                            Mi'raj hendaknya menjadi pengingat dan motivasi untuk senantiasa memperbaiki
-                                            ibadah, mempertebal keimanan, dan menyempurnakan ketakwaan kepada Allah SWT.
-                                            Mari jadikan momentum ini sebagai sarana untuk memperbaiki
-                                            diri ke arah yang lebih baik. Semoga hikmah dari peristiwa Isra Mi'raj dapat
-                                            menjadi bekal kita di dunia dan akhirat.</p>
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Waktu Pengiriman : 2023-02-18 15:47:00</li>
-                                        <li class="list-group-item">
-                                            <button type="button" class="border border-light badge badge-primary view"
-                                                data-target="#tampilPengumumanAdminModal"
-                                                data-alt="PERINGATAN ISRA' MI'RAJ NABI MUHAMMAD SAW 1444 H"
-                                                data-toggle="modal"
-                                                data-image="https://dpm.stis.ac.id/assets/img/pengumuman/WhatsApp_Image_2023-02-18_at_14_18_44.jpeg">Detail
-                                                Gambar</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-lg-4 col-md-6">
-                            <div class="card bg-transparent border-light">
-                                <div class="card border-primary mb-3">
-                                    <div class="text-center img-fluid">
-                                        <img class="card-img-top rounded-lg"
-                                            src="https://dpm.stis.ac.id/assets/img/pengumuman/Sidang_Umum_II1.png"
-                                            alt="" width="100">
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title text-center card-header">SIDANG UMUM II DEWAN PERWAKILAN
-                                            MAHASISWA POLSTAT STIS T.A. 2022/2023</h4>
-                                        <p class="card-text">Dalam rangka Penetapan Anggaran Imapolstat dalam Sidang
-                                            Umum II DPM 2022/2023, Kami mengundang rekan-rekan sekalian untuk hadir pada
-                                            Sidang Umum II DPM 2022/2023 yang akan dilaksanakan
-                                            pada:http://127.0.0.1:3000/aspirasi.html
-                                            Hari,Tanggal: Senin, Selasa, dan Kamis, 27-28 Februari dan 2 Maret 2023
-                                            Waktu: 16.15 WIB - selesai Tempat : Auditorium Polstat STIS DC : PDA
-                                            Diwajibkan kepada seluruh anggota DPM 2022/2023</p>
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Waktu Pengiriman : 2023-03-08 19:41:49</li>
-                                        <li class="list-group-item">
-                                            <button type="button" class="border border-light badge badge-primary view"
-                                                data-target="#tampilPengumumanAdminModal"
-                                                data-alt="SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS T.A. 2022/2023"
-                                                data-toggle="modal"
-                                                data-image="https://dpm.stis.ac.id/assets/img/pengumuman/Sidang_Umum_II1.png">Detail
-                                                Gambar</button>
-                                            <a href="dpm/arsipdokumen"
-                                                class="btn-edit-pengumuman border border-light badge badge-warning">Lihat
-                                                Link</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card bg-transparent border-light">
+                <div class="card bg-birulaut border-primary">
+                    <div class="text-center img-fluid crop">
+                        <img class="card-img-top rounded-lg p-2" src="https://dpm.stis.ac.id/assets/img/pengumuman/WhatsApp_Image_2023-02-18_at_14_18_44.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="text-center">PERINGATAN ISRA' MI'RAJ NABI
+                            MUHAMMAD SAW 1444 H</h6>
+                        <!-- limit the paragraph so it doest take too much space -->
+                        <p class="card-text limited-text">Assalamualaikum Warahmatullahi Wabarakatuh Halo rekan-rekan
+                            Aspician Malam 27 Rajab merupakan salah satu bukti dari kebesaran Allah SWT.
+                            Melalui kuasa-Nya, Rasullah menempuh perjalan spiritual dengan jarak ribuan
+                            kilometer dari Masjidil Haram ke Masjidil Aqsa dan dilanjutkan ke Sidratul
+                            Muntaha. Perjalanan yang menembus langit ketujuh itu hanya ditempuh dalam
+                            waktu satu malam atas kekuasaan Allah SWT. Persitiwa Isra
+                            Mi'raj hendaknya menjadi pengingat dan motivasi untuk senantiasa memperbaiki
+                            ibadah, mempertebal keimanan, dan menyempurnakan ketakwaan kepada Allah SWT.
+                            Mari jadikan momentum ini sebagai sarana untuk memperbaiki
+                            diri ke arah yang lebih baik. Semoga hikmah dari peristiwa Isra Mi'raj dapat
+                            menjadi bekal kita di dunia dan akhirat.
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="bg-birulaut list-group-item align-self-center">
+                                <button type="button" class="border-0 p-2 badge badge-primary view" data-target="#tampilPengumumanAdminModal" data-alt="SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS T.A. 2022/2023" data-toggle="modal">Selengkapnya</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="col-lg-4 col-md-6">
+            <div class="card bg-transparent border-light">
+                <div class="card border-primary mb-3">
+                    <div class="text-center img-fluid">
+                        <img class="card-img-top rounded-lg" src="https://dpm.stis.ac.id/assets/img/pengumuman/WhatsApp_Image_2023-02-18_at_14_18_44.jpeg" alt="" width="100">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center card-header">PERINGATAN ISRA' MI'RAJ NABI
+                            MUHAMMAD SAW 1444 H</h4>
+                        <p class="card-text">Assalamualaikum Warahmatullahi Wabarakatuh Halo rekan-rekan
+                            Aspician Malam 27 Rajab merupakan salah satu bukti dari kebesaran Allah SWT.
+                            Melalui kuasa-Nya, Rasullah menempuh perjalan spiritual dengan jarak ribuan
+                            kilometer dari Masjidil Haram ke Masjidil Aqsa dan dilanjutkan ke Sidratul
+                            Muntaha. Perjalanan yang menembus langit ketujuh itu hanya ditempuh dalam
+                            waktu satu malam atas kekuasaan Allah SWT. Persitiwa Isra
+                            Mi'raj hendaknya menjadi pengingat dan motivasi untuk senantiasa memperbaiki
+                            ibadah, mempertebal keimanan, dan menyempurnakan ketakwaan kepada Allah SWT.
+                            Mari jadikan momentum ini sebagai sarana untuk memperbaiki
+                            diri ke arah yang lebih baik. Semoga hikmah dari peristiwa Isra Mi'raj dapat
+                            menjadi bekal kita di dunia dan akhirat.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Waktu Pengiriman : 2023-02-18 15:47:00</li>
+                        <li class="list-group-item">
+                            <button type="button" class="border border-light badge badge-primary view" data-target="#tampilPengumumanAdminModal" data-alt="PERINGATAN ISRA' MI'RAJ NABI MUHAMMAD SAW 1444 H" data-toggle="modal" data-image="https://dpm.stis.ac.id/assets/img/pengumuman/WhatsApp_Image_2023-02-18_at_14_18_44.jpeg">Detail
+                                Gambar</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card bg-transparent border-light">
+                <div class="card border-primary mb-3">
+                    <div class="text-center img-fluid">
+                        <img class="card-img-top rounded-lg" src="https://dpm.stis.ac.id/assets/img/pengumuman/Sidang_Umum_II1.png" alt="" width="100">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center card-header">SIDANG UMUM II DEWAN PERWAKILAN
+                            MAHASISWA POLSTAT STIS T.A. 2022/2023</h4>
+                        <p class="card-text">Dalam rangka Penetapan Anggaran Imapolstat dalam Sidang
+                            Umum II DPM 2022/2023, Kami mengundang rekan-rekan sekalian untuk hadir pada
+                            Sidang Umum II DPM 2022/2023 yang akan dilaksanakan
+                            pada:http://127.0.0.1:3000/aspirasi.html
+                            Hari,Tanggal: Senin, Selasa, dan Kamis, 27-28 Februari dan 2 Maret 2023
+                            Waktu: 16.15 WIB - selesai Tempat : Auditorium Polstat STIS DC : PDA
+                            Diwajibkan kepada seluruh anggota DPM 2022/2023</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Waktu Pengiriman : 2023-03-08 19:41:49</li>
+                        <li class="list-group-item">
+                            <button type="button" class="border border-light badge badge-primary view" data-target="#tampilPengumumanAdminModal" data-alt="SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS T.A. 2022/2023" data-toggle="modal" data-image="https://dpm.stis.ac.id/assets/img/pengumuman/Sidang_Umum_II1.png">Detail
+                                Gambar</button>
+                            <a href="dpm/arsipdokumen" class="btn-edit-pengumuman border border-light badge badge-warning">Lihat
+                                Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
     </div>
 </div>
 <!-- /.container-fluid -->
