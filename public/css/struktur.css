@@ -269,7 +269,7 @@ ul.departments li.department span.struktur {
 
 
 @media screen and (min-width: 768px) {
-    .modal-dialog{
+    .modal-profil .modal-dialog{
         margin-left:25%;
     }
     
@@ -465,7 +465,7 @@ height: 287.738px;
     .photo-ketua-komisi {
         max-width: 40%;
     }
-    div.modal-body div.col-4 {
+    div.modal-profil .modal-body div.col-4 {
         flex: 0 0 50%;
         max-width: 50%;
     }
@@ -487,32 +487,32 @@ height: 287.738px;
     .photo-anggota-komisi {
         margin-bottom: 5px;
     }
-    div.modal-body div.col-4 {
+    div.modal-profil .modal-body div.col-4 {
         flex: 0 0 100%;
         max-width: 100%;
     }
 }
 
-.modal-title h3{
+.modal-profil .modal-title h3{
     font-weight: bold;
     color: black;
 }
 
-.modal-dialog{
+.modal-profil .modal-dialog{
     max-width: 782px;
 }
-.modal-content{
+.modal-profil .modal-content{
     border-radius: 10px;
     border: 0;
 }
-.modal-header{
+.modal-profil .modal-header{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: #dbdbdb;
     align-content: center;
 }
 
-.modal-body{
+.modal-profil .modal-body{
     background-color: #eaeaea;    
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -553,14 +553,16 @@ font-weight: bold;
     .card-header{
         display: flex;
         justify-content: center;
+        padding-bottom: 0.5em;
     }      
     .card-body{
-        width: 75%; 
-        margin: 0 auto 0 auto;  
+        width: 70%; 
+        margin: 0 auto;  
+        padding-right: 5%;
     }  
 }
 
-.modal-header .close{
+.modal-profil .modal-header .close{
     padding: 0 2px 0 0;
 }
 
@@ -574,4 +576,32 @@ font-weight: bold;
     background-color: #CDDAFFCC;
     color: #4E73DF;
     opacity: 40%;
+}
+.accordion-profile-dpm .card:first-child,
+.accordion-profile-dpm .card:nth-child(2){
+    .btn:hover, .btn:focus{
+        .row .ml-auto i{
+            opacity: 70%;
+        }
+    }
+}
+.accordion-profile-dpm .card:last-child{
+    .card-body{
+        padding-right: 0;
+    }
+    .btn{
+        background-color: #EBEBEB;
+        color: black;
+        .row .ml-auto{
+            color: #9B9B9B;
+        }
+    }
+    .btn:hover, .btn:focus{
+        background-color: #DEDEDE;
+        color: black;
+        .row .ml-auto{
+            color: #4B4B4B;
+        }
+    }
+    
 }
