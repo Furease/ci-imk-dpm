@@ -2,7 +2,7 @@
 <?php $this->section('content'); ?>
 
 <!-- Begin Page Content -->
-<div class="container-fluid bg-white">
+<div class="container-fluid bg-white mb-5">
 
     <!-- Page Heading -->
     <div class="media">
@@ -45,10 +45,10 @@
 
         <!-- Kampus -->
         <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card shadow h-100 py-2 bg-abu">
+            <div class="card shadow h-100 py-2 bg-abu border-0">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
-                        <div class="card col-auto mr-3 bg-birulaut py-2 px-3">
+                        <div class="card col-auto mr-3 bg-birulaut py-2 px-4">
                             <i class="fas fa-fw fa-building fa-2x text-primary"></i>
                         </div>
                         <div class="col mr-2">
@@ -65,10 +65,10 @@
 
         <!-- Website DPM -->
         <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card shadow h-100 py-2 bg-abu">
+            <div class="card shadow h-100 py-2 bg-abu border-0">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
-                        <div class="card col-auto mr-3 bg-birulaut py-2 px-3">
+                        <div class="card col-auto mr-3 bg-birulaut py-2 px-4">
                             <i class="fas fa-globe fa-2x text-primary"></i>
                         </div>
                         <div class="col mr-2">
@@ -85,10 +85,10 @@
 
         <!-- Ormawa  -->
         <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card shadow h-100 py-2 bg-abu">
+            <div class="card shadow h-100 py-2 bg-abu border-0">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
-                        <div class="card col-auto mr-3 bg-birulaut py-2 px-3">
+                        <div class="card col-auto mr-3 bg-birulaut py-2 px-4">
                             <i class="fas fa-sitemap fa-2x text-primary"></i>
                         </div>
                         <div class="col mr-2">
@@ -110,10 +110,10 @@
 
         <!-- Pengurus Tingkat -->
         <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card shadow h-100 py-2 bg-abu">
+            <div class="card shadow h-100 py-2 bg-abu border-0">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
-                        <div class="card col-auto mr-3 bg-birulaut py-2 px-3">
+                        <div class="card col-auto mr-3 bg-birulaut py-2 px-4">
                             <i class="fas fa-users fa-2x text-primary"></i>
                         </div>
                         <div class="col mr-2">
@@ -140,43 +140,45 @@
 
         <div class="col-sm-auto align-self-center"><b>Berita DPM</b></div>
         <div class="col align-self-center border-top border-primary d-none d-sm-block"></div>
-        <div class="col-sm-auto align-self-center dropdown my-2">
-            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Bulan
-            </button>
-            <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Januari</a>
-                <a class="dropdown-item" href="#">Februari</a>
-                <a class="dropdown-item" href="#">Maret</a>
-                <a class="dropdown-item" href="#">April</a>
-                <a class="dropdown-item" href="#">Mei</a>
-                <a class="dropdown-item" href="#">Juni</a>
-                <a class="dropdown-item" href="#">Juli</a>
-                <a class="dropdown-item" href="#">Agustus</a>
-                <a class="dropdown-item" href="#">September</a>
-                <a class="dropdown-item" href="#">Oktober</a>
-                <a class="dropdown-item" href="#">November</a>
-                <a class="dropdown-item" href="#">Desember</a>
+        <div class="row mx-2">
+            <div class="align-self-center dropdown my-2 mx-1">
+                <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Bulan
+                </button>
+                <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Januari</a>
+                    <a class="dropdown-item" href="#">Februari</a>
+                    <a class="dropdown-item" href="#">Maret</a>
+                    <a class="dropdown-item" href="#">April</a>
+                    <a class="dropdown-item" href="#">Mei</a>
+                    <a class="dropdown-item" href="#">Juni</a>
+                    <a class="dropdown-item" href="#">Juli</a>
+                    <a class="dropdown-item" href="#">Agustus</a>
+                    <a class="dropdown-item" href="#">September</a>
+                    <a class="dropdown-item" href="#">Oktober</a>
+                    <a class="dropdown-item" href="#">November</a>
+                    <a class="dropdown-item" href="#">Desember</a>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-auto align-self-center dropdown">
-            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Tahun
-            </button>
-            <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">2020</a>
-                <a class="dropdown-item" href="#">2021</a>
-                <a class="dropdown-item" href="#">2022</a>
+            <div class="align-self-center dropdown mx-1">
+                <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tahun
+                </button>
+                <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">2020</a>
+                    <a class="dropdown-item" href="#">2021</a>
+                    <a class="dropdown-item" href="#">2022</a>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-lg-4 col-md-6">
-            <div class="card bg-transparent border-light">
-                <div class="card bg-birulaut border-primary">
+            <div class="card bg-transparent border-0">
+                <div class="card bg-birulaut border-0 p-2">
                     <div class="text-center img-fluid crop">
-                        <img class="card-img-top rounded-lg p-2" src="https://dpm.stis.ac.id/assets/img/pengumuman/Sidang_Umum_II1.png" alt="">
+                        <img class="card-img-top" src="https://dpm.stis.ac.id/assets/img/pengumuman/Sidang_Umum_II1.png" alt="">
                     </div>
                     <div class="card-body">
                         <h6 class="text-center">SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS
