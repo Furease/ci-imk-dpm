@@ -174,17 +174,17 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 mb-4">
             <div class="card bg-transparent border-0">
                 <div class="card bg-birulaut border-0 p-2">
                     <div class="text-center img-fluid crop">
                         <img class="card-img-top" src="https://dpm.stis.ac.id/assets/img/pengumuman/Sidang_Umum_II1.png" alt="">
                     </div>
                     <div class="card-body">
-                        <h6 class="text-center">SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS
+                        <h6 id="news-title" class="text-center">SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS
                             T.A. 2022/2023</h6>
                         <!-- limit the paragraph so it doest take too much space -->
-                        <p class="card-text limited-text">Dalam rangka Penetapan Anggaran Imapolstat
+                        <p id="news-text" class="card-text limited-text">Dalam rangka Penetapan Anggaran Imapolstat
                             dalam Sidang Umum II DPM 2022/2023, Kami mengundang rekan-rekan sekalian
                             untuk hadir pada Sidang Umum II DPM 2022/2023 yang akan dilaksanakan
                             pada:http://127.0.0.1:3000/aspirasi.html
@@ -193,8 +193,8 @@
                             Diwajibkan kepada seluruh anggota DPM 2022/2023
                         </p>
                         <ul class="list-group list-group-flush">
-                            <li class="bg-birulaut list-group-item align-self-center">
-                                <button type="button" class="border-0 p-2 badge badge-primary view" data-target="#tampilPengumumanAdminModal" data-alt="SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS T.A. 2022/2023" data-toggle="modal">Selengkapnya</button>
+                            <li class="bg-birulaut list-group-item align-self-center p-0">
+                                <button id="modal-btn" type="button" class="border-0 p-2 badge badge-primary view">Selengkapnya</button>
                             </li>
                         </ul>
                     </div>
@@ -204,17 +204,17 @@
         </div>
 
 
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 mb-4">
             <div class="card bg-transparent border-0">
                 <div class="card bg-birulaut border-0 p-2">
                     <div class="text-center img-fluid crop">
                         <img class="card-img-top" src="https://dpm.stis.ac.id/assets/img/pengumuman/WhatsApp_Image_2023-02-18_at_14_18_44.jpeg" alt="">
                     </div>
                     <div class="card-body">
-                        <h6 class="text-center">PERINGATAN ISRA' MI'RAJ NABI
+                        <h6 id="news-title" class="text-center">PERINGATAN ISRA' MI'RAJ NABI
                             MUHAMMAD SAW 1444 H</h6>
                         <!-- limit the paragraph so it doest take too much space -->
-                        <p class="card-text limited-text">Assalamualaikum Warahmatullahi Wabarakatuh Halo rekan-rekan
+                        <p id="news-text" class="card-text limited-text">Assalamualaikum Warahmatullahi Wabarakatuh Halo rekan-rekan
                             Aspician Malam 27 Rajab merupakan salah satu bukti dari kebesaran Allah SWT.
                             Melalui kuasa-Nya, Rasullah menempuh perjalan spiritual dengan jarak ribuan
                             kilometer dari Masjidil Haram ke Masjidil Aqsa dan dilanjutkan ke Sidratul
@@ -227,8 +227,8 @@
                             menjadi bekal kita di dunia dan akhirat.
                         </p>
                         <ul class="list-group list-group-flush">
-                            <li class="bg-birulaut list-group-item align-self-center">
-                                <button type="button" class="border-0 p-2 badge badge-primary view" data-target="#tampilPengumumanAdminModal" data-alt="SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS T.A. 2022/2023" data-toggle="modal">Selengkapnya</button>
+                            <li class="bg-birulaut list-group-item align-self-center p-0">
+                                <button id="modal-btn" type="button" class="border-0 p-2 badge badge-primary view">Selengkapnya</button>
                             </li>
                         </ul>
                     </div>
@@ -301,5 +301,42 @@
     </div>
 </div>
 <!-- /.container-fluid -->
+
+<!-- Popup saat nekan tombol di pengumuman -->
+<!-- <div class="modal fade" id="tampilPengumumanAdminModal3" tabindex="-1" role="dialog" aria-labelledby="tampilPengumumanAdminModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="popup_image rounded d-block w-100" src="#" alt="#">
+                <div id="modal-text">
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="modal fade" id="tampilPengumumanAdminModal" tabindex="-1" role="dialog" aria-labelledby="tampilPengumumanAdminModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="card shadow">
+
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 id="modal-title" class="m-0 font-weight-bold text-center">Dropdown Card Example</h6>
+                    <div class="dropdown no-arrow">
+
+                        <a class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="modal-text" class="card-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php $this->endSection(); ?>
