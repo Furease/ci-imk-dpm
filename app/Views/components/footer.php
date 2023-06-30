@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="sticky-footer bg-white">
+<footer class="sticky-footer bg-white shadow py-3">
     <div class="container my-auto">
         <div class="text-center mb-2">
             <a class="text-decoration-none mx-2" href="">

@@ -4,7 +4,7 @@
 <!-- Begin Page Content -->
 <div id="main-context">
     <!-- Begin container-fluid -->
-    <div class="container-fluid">
+    <div class="container-fluid mb-5">
         <!-- Page Heading -->
         <div class="row mb-4">
             <h1 class="align-self-center h3 mx-2 text-gray-800">Galeri</h1>
@@ -31,6 +31,51 @@
 
         <div class="container">
             <div class="card-columns spotlight-group">
+                <div class="card shadow mb-4 gallery-out bg-birulaut">
+                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg ">
+                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg " alt="Card image 1">
+                    </a>
+                </div>
+                <div class="card shadow mb-4 gallery-out bg-birulaut">
+                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg ">
+                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg " alt="Card image 2">
+                    </a>
+                </div>
+                <div class="card shadow mb-4 gallery-out bg-birulaut">
+                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg " data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg " alt="Card image 3">
+                    </a>
+                </div>
+                <div class="card shadow mb-4 gallery-out bg-birulaut">
+                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg ">
+                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg " alt="Card image 1">
+                    </a>
+                </div>
+                <div class="card shadow mb-4 gallery-out bg-birulaut">
+                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg ">
+                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg " alt="Card image 2">
+                    </a>
+                </div>
+                <div class="card shadow mb-4 gallery-out bg-birulaut">
+                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg " data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg " alt="Card image 3">
+                    </a>
+                </div>
+                <div class="card shadow mb-4 gallery-out bg-birulaut">
+                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg ">
+                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg " alt="Card image 1">
+                    </a>
+                </div>
+                <div class="card shadow mb-4 gallery-out bg-birulaut">
+                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg ">
+                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg " alt="Card image 2">
+                    </a>
+                </div>
+                <div class="card shadow mb-4 gallery-out bg-birulaut">
+                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg " data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg " alt="Card image 3">
+                    </a>
+                </div>
                 <div class="card shadow mb-4 gallery-out bg-birulaut">
                     <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg ">
                         <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg " alt="Card image 1">

@@ -22,13 +22,14 @@
     <link href="css/general.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fluid-gallery.css">
     <!-- Script gallery viewer -->
-    <script src="js/spotlight.bundle.js"></script>
+    <script src="/js/spotlight.bundle.js"></script>
 
     <!-- profil DPM -->
-    <!-- <link href="css/struktur.css" rel="stylesheet" />
-    <link href="https://dpm.stis.ac.id/assets/vendor/datatables2/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://dpm.stis.ac.id/assets/vendor/datatables2/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css" /> -->
+    <link href="css/struktur.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="assets/datatables/dataTables.bootstrap4.css">
+    <link href="assets/datatables/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css" />
 
 </head>
 
@@ -107,10 +108,13 @@
     <script src="js/sb-admin-2.min.js"></script>
     <script src="js/changeaccess.js"></script>
     <script src="js/tampilmodal.js"></script>
-    <script src="js/arsipsistembaru.js"></script>
     <script src="js/statistikreimburse.js"></script>
     <script src="js/script.js"></script>
-
+    <script src="../assets/datatables/dataTables.bootstrap4.js"></script>
+    <script src="assets/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/datatables/jquery.dataTables.js"></script>
+    <script src="js/arsipsistembaru.js"></script>
     <!-- SWEET ALERT -->
     <script src="swal/sweetalert2.all.min.js"></script>
     <script src="swal/myscript.js"></script>
@@ -131,28 +135,7 @@
             $(this).next('.custom-file-label').addClass("selected").html(fileName);
         });
     </script>
-    <script>
-        $(document).ready(function() {
-            $('#tabelsaya').DataTable({
-
-                "lengthMenu": [
-                    [25, 50, 75, -1],
-                    [25, 50, 75, "All"]
-                ],
-                columnDefs: [{
-                    targets: [0],
-                    orderData: [0, 1]
-                }, {
-                    targets: [1],
-                    orderData: [1, 0]
-                }, {
-                    targets: [3],
-                    orderData: [3, 0]
-                }],
-                "scrollX": true
-            });
-        });
-    </script>
+    
 
 
 </body>
