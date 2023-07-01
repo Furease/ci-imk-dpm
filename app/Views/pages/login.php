@@ -20,6 +20,21 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
 
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            display: none;
+        }
+
+        /* input focus more elegant */
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="number"]:focus {
+            border-bottom: 2px solid #5fbed6;
+            box-shadow: 0 1px 0 0 #5fbed6;
+        }
+    </style>
+
 </head>
 
 <body style="background: linear-gradient(244.04deg, rgba(255, 255, 255, 0.27) 10.63%, rgba(15, 121, 193, 0.15) 104.94%), #FFFFFF;
@@ -48,13 +63,13 @@
                                 <div class="text-center">
                                     <img id="login-sipadu" class="window-btn" style="width: 10rem;" src="img/sipadu.png" alt="Tombol admin">
                                 </div>
-                                <form class="user">
+                                <form name="myForm" class="user" action="beranda" method="get" onsubmit="return validateForm()">
                                     <div class="form-group">
                                         <!-- <label for="nim">NIM</label> -->
-                                        <input type="email" class="form-control  border-top-0 border-right-0 border-left-0" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter NIM..." style="border-radius: 0; border-bottom-width: medium">
+                                        <input type="number" class="form-control  border-top-0 border-right-0 border-left-0" id="nim" aria-describedby="emailHelp" placeholder="Enter NIM..." style="border-radius: 0; border-bottom-width: medium">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control border-top-0 border-right-0 border-left-0" id="exampleInputPassword" placeholder="Password" style="border-radius: 0; border-bottom-width: medium">
+                                        <input type="password" class="form-control border-top-0 border-right-0 border-left-0" id="password" placeholder="Password" style="border-radius: 0; border-bottom-width: medium">
                                     </div>
                                     <!-- <div class="form-group">
                                 <div class="custom-control custom-checkbox small">
@@ -63,9 +78,9 @@
                                         Me</label>
                                 </div>
                             </div> -->
-                                    <a href="beranda" class="btn btn-primary btn-block mt-4">
+                                    <button type="submit" class="btn btn-primary btn-block mt-4">
                                         Login
-                                    </a>
+                                    </button>
                                     <hr>
                                 </form>
                                 <div class="text-center">
@@ -89,17 +104,17 @@
                                     <img id="login-dpm-2" class="window-btn" style="width: 6rem;" src="https://dpm.stis.ac.id/images-cm/icons/group-1s.svg" alt="Tombol admin">
                                 </div>
                                 <br>
-                                <form class="user">
+                                <form name="myForm2" class="user" action="beranda" method="get" onsubmit="return validateForm2()">
                                     <div class="form-group">
                                         <!-- <label for="nim">NIM</label> -->
-                                        <input type="email" class="form-control  border-top-0 border-right-0 border-left-0" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." style="border-radius: 0; border-bottom-width: medium">
+                                        <input type="email" class="form-control  border-top-0 border-right-0 border-left-0" id="email" aria-describedby="emailHelp" placeholder="Enter Email Address..." style="border-radius: 0; border-bottom-width: medium">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control border-top-0 border-right-0 border-left-0" id="exampleInputPassword" placeholder="Password" style="border-radius: 0; border-bottom-width: medium">
+                                        <input type="password" class="form-control border-top-0 border-right-0 border-left-0" id="password-email" placeholder="Password" style="border-radius: 0; border-bottom-width: medium">
                                     </div>
-                                    <a href="beranda" class="btn btn-primary btn-block mt-4">
+                                    <button type="submit" class="btn btn-primary btn-block mt-4">
                                         Login
-                                    </a>
+                                    </button>
                                     <hr>
                                 </form>
                                 <div class="text-center">
@@ -127,7 +142,7 @@
 
 
 
-    <div class="modal fade" id="modalLoginAdmin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <!-- <div class="modal fade" id="modalLoginAdmin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -160,7 +175,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script type="text/javascript">
         function open_window_sipadu() {
@@ -219,6 +234,48 @@
             $('#tab-1').show(500);
             $('#tab-2').hide(500);
         });
+
+
+        // validation login using action form
+        function validateForm() {
+            var x = document.forms["myForm"]["nim"].value;
+            var y = document.forms["myForm"]["password"].value;
+            if (x == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'NIM tidak boleh kosong!',
+                })
+                return false;
+            } else if (y == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Password tidak boleh kosong!',
+                })
+                return false;
+            }
+        }
+
+        function validateForm2() {
+            var x = document.forms["myForm2"]["email"].value;
+            var y = document.forms["myForm2"]["password-email"].value;
+            if (x == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Email tidak boleh kosong!',
+                })
+                return false;
+            } else if (y == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Password tidak boleh kosong!',
+                })
+                return false;
+            }
+        }
     </script>
 
 </body>
