@@ -88,7 +88,7 @@ $(document).ready(function () {
     $('select,#tabelsaya_filter label input').addClass('rounded-lg').
     css({'border':'2px solid #A6B9EF'});
     $('th').addClass('text-center');   
-    $('td:nth-child(3)').on('click', function(){
+    $('#tabelsaya .btn-arsip').on('click', function(){
         $("[id^=tabelsaya]").hide();
         $("[id^=tabelsayu]").toggleClass('d-none d-block');
         $("#back-btn").toggleClass('d-none d-block');
@@ -97,6 +97,12 @@ $(document).ready(function () {
         $("[id^=tabelsaya]").show();
         $("[id^=tabelsayu]").toggleClass('d-none d-block');
         $(this).toggleClass('d-none d-block');
+    });
+    $('.file-view').on('click', function(){
+        window.open('https://docs.google.com/viewerng/viewer?url=https://dpm.stis.ac.id/assets/arsip/dokumen/ADART_Imapolstat_2021-2022.pdf');        
+    });
+    $('.file-download').on('click', function(){
+        window.open('https://dpm.stis.ac.id/dpm/downloadarsip/ADART_Imapolstat_2021-2022.pdf');        
     });
 });
 

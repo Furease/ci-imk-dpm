@@ -30,7 +30,7 @@ use function Composer\Autoload\includeFile;
                             <div class="col-sm-auto text-white">
                                 <i class="fas fa-md fa-users"></i>
                             </div>
-                            <div class="col-sm text-white h5 mb-0 p-0 ml-2 text-left">
+                            <div class="col-sm-auto text-white h5 mb-0 p-0 ml-2">
                                 Dewan Perwakilan Mahasiswa
                             </div>
                             <div class="col-sm-auto ml-auto" style="color:#EFEFEF">
@@ -111,7 +111,7 @@ use function Composer\Autoload\includeFile;
                             <div class="col-sm-auto ">
                             <i class="fas fa-md fa-sitemap"></i>
                             </div>
-                            <div class="col-sm  h5 mb-0 p-0 ml-2 text-left">
+                            <div class="col-sm-auto  h5 mb-0 p-0 ml-2">
                                 Struktur Organisasi
                             </div>
                             <div class="col-sm-auto ml-auto">

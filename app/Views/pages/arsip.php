@@ -75,9 +75,9 @@
                                             <td>
                                                 <div class="d-flex justify-content-center">
                                                     <div class="mr-3">
-                                                        <button class="btn btn-arsip"><i class="fas fa-eye"></i></button>                                                    
+                                                        <button class="btn btn-arsip file-view"><i class="fas fa-eye"></i></button>                                                    
                                                     </div>
-                                                    <button class="btn btn-arsip"><i class="fas fa-download"></i></button>
+                                                    <button class="btn btn-arsip file-download"><i class="fas fa-download"></i></button>
                                                 </div>
                                             </td>
                                         </tr>
