@@ -51,7 +51,7 @@
                                 <form class="user">
                                     <div class="form-group">
                                         <!-- <label for="nim">NIM</label> -->
-                                        <input type="email" class="form-control  border-top-0 border-right-0 border-left-0" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." style="border-radius: 0; border-bottom-width: medium">
+                                        <input type="email" class="form-control  border-top-0 border-right-0 border-left-0" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter NIM..." style="border-radius: 0; border-bottom-width: medium">
                                     </div>
                                     <div class="form-group">
                                         <input type="password" class="form-control border-top-0 border-right-0 border-left-0" id="exampleInputPassword" placeholder="Password" style="border-radius: 0; border-bottom-width: medium">
