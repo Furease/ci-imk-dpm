@@ -31,8 +31,8 @@
             </div>
 
             <div class="col-lg-8">
-                <div class="card mb-4">
-                    <div class="card-header bg-white py-3">
+                <div class="card mb-4 border-0">
+                    <div class="card-header bg-white py-3 border-0">
                         <div class="row">
                             <h4 class="align-self-center text-gray-800 mx-2">Form Sambatan</h4>
                             <div class="col align-self-center border-top mx-2 border-primary d-none d-sm-block">
@@ -40,11 +40,11 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <form action="" method="post">
-                            <div class="form-group ">
+                        <form id="aspirasiForm" onsubmit="openModal()">
+                            <div class="form-group">
                                 <div class="col-sm-12">
                                     <label for="dari" class="col-form-label">Nama Pengirim</label>
-                                    <input type="text" class="form-control" id="dari" name="dari" placeholder="Nama kamu, iya... kamu, boleh nama samaran">
+                                    <input type="text" class="form-control" id="dari" name="dari" required placeholder="Nama kamu, iya... kamu, boleh nama samaran">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -63,12 +63,12 @@
                             <div class="form-group">
                                 <div class="col-sm-12">
                                     <label for="isi" class="col-form-label">Isi Sambatan</label>
-                                    <textarea type="text" class="form-control" id="isi" name="isi"></textarea>
+                                    <textarea type="text" class="form-control" required id="isi" name="isi"></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12">
-                                    <button type="submit" name="sambat" class="btn btn-primary float-left" onclick="return confirm('apakah anda yakin ingin sambat tentang hal tersebut?')">
+                                    <button type="submit" name="sambat" class="btn btn-primary float-left">
                                         Yuk sambat
                                     </button>
                                 </div>
@@ -81,5 +81,6 @@
     </div>
 </div>
 <!-- /.container-fluid -->
+
 
 <?php $this->endSection(); ?>

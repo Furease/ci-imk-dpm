@@ -1,3 +1,11 @@
+.filterDiv {
+  display: none;
+}
+
+.show-galeri {
+  display: block;
+}
+
 .image-gallery {
     opacity: 1;
     display: block;
@@ -8,7 +16,7 @@
   }
 
 .gallery-out {
-  padding: 5px;
+  padding: 7px;
 }
 
   .text-gallery {

@@ -24,7 +24,7 @@ use function Composer\Autoload\includeFile;
 
         <div class="accordion accordion-profile-dpm">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header bg-white">
                     <button class="btn bg-primary rounded-pill w-75" type="button" data-toggle="collapse" data-target="#definisi" aria-expanded="false" aria-controls="definisi">
                         <div class="row justify-content-around align-items-center">
                             <div class="col-sm-auto text-white">
@@ -51,7 +51,7 @@ use function Composer\Autoload\includeFile;
             </div>
 
             <div class="card">
-                <div class="card-header">
+                <div class="card-header bg-white">
                     <button class="btn bg-warning rounded-pill w-75" type="button" data-toggle="collapse" data-target="#visi" aria-expanded="false" aria-controls="visi">
                         <div class="row justify-content-around align-items-center">
                             <div class="col-sm-auto text-white">
@@ -105,7 +105,7 @@ use function Composer\Autoload\includeFile;
             </div>
 
             <div class="card">
-                <div class="card-header">
+                <div class="card-header bg-white">
                     <button class="btn rounded-pill w-75" type="button" data-toggle="collapse" data-target="#struktur" aria-expanded="false" aria-controls="struktur">
                         <div class="row justify-content-around align-items-center">
                             <div class="col-sm-auto ">

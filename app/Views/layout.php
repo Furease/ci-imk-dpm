@@ -86,6 +86,26 @@
         </div>
     </div>
 
+    <!-- Aspirasi Modal-->
+    <div class="modal fade" id="aspirasiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Apakah anda sudah yakin untuk mengirim aspirasi?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Apabila anda yakin untuk mengirim aspirasi anda dapat menekan tombol iya, jika anda ingin kembali ke halaman web anda bisa menekan tombol tidak.
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-danger" href="/aspirasi">Iya</a>
+                    <button class="btn btn-primary" type="button" data-dismiss="modal">Tidak</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap core JavaScript-->
     <script src="assets/jquery/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -124,9 +144,60 @@
             $(this).next('.custom-file-label').addClass("selected").html(fileName);
         });
     </script>
+    <script>
+        $('#aspirasiForm').on('submit', function(e) {
+            $('#aspirasiModal').modal('show');
+            e.preventDefault();
+        });
+    </script>
 
+    <script>
+        filterSelection("galeri_semua")
 
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "galeri_semua") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show-galeri");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show-galeri");
+            }
+        }
 
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn-galeri");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("activ");
+                current[0].className = current[0].className.replace(" activ", "");
+                this.className += " activ";
+            });
+        }
+    </script>
 </body>
 
 </html>
