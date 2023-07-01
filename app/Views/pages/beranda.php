@@ -316,22 +316,43 @@
 </div> -->
 
 <div class="modal fade" id="tampilPengumumanAdminModal" tabindex="-1" role="dialog" aria-labelledby="tampilPengumumanAdminModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="card shadow">
 
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 id="modal-title" class="m-0 font-weight-bold text-center">Dropdown Card Example</h6>
+                <div class="card-header border-0 pt-3 pb-1 d-flex flex-row align-items-center justify-content-between" style="background-color: #fff;">
+                    <h6 id="modal-title" class="m-0 font-weight-bold text-center text-gray-900"></h6>
                     <div class="dropdown no-arrow">
-
                         <a class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </a>
-
                     </div>
                 </div>
 
-                <div id="modal-text" class="card-body">
+                <div class="card-body pt-0">
+                    <div class="row m-0 p-0">
+                        <div class="col-6 pl-0">
+                            <i class="fas fa-calendar-alt fa-sm mr-1 m-0 "></i>
+                            <small>
+                                <span id="modal-date" class="text-left m-0 p-0">
+                                    25 Juli 2023
+                                </span>
+                            </small>
+                        </div>
+                        <div class="col-6 text-right">
+                            <i class="fas fa-pen-nib fa-sm mr-1 m-0"></i>
+                            <small>
+                                <span id="modal-writer" class=" m-0 p-0">
+                                    Pengurus DPM
+                                </span>
+                            </small>
+                        </div>
+                    </div>
+                    <!-- hr thicker -->
+                    <hr class="sidebar-divider mt-1 mb-2">
+                    <!-- text justify -->
+                    <div id="modal-text" class="text-justify">
+                    </div>
 
                 </div>
             </div>
