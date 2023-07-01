@@ -66,17 +66,6 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Popup saat nekan tombol di pengumuman -->
-    <div class="modal fade" id="tampilPengumumanAdminModal" tabindex="-1" role="dialog" aria-labelledby="tampilPengumumanAdminModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img class="popup_image rounded d-block w-100" src="#" alt="#">
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -161,8 +150,6 @@
             e.preventDefault();
         });
     </script>
-
-
 </body>
 
 </html>

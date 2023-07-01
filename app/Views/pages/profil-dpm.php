@@ -106,15 +106,15 @@ use function Composer\Autoload\includeFile;
 
             <div class="card">
                 <div class="card-header bg-white">
-                    <button class="btn bg-gray-400 rounded-pill w-75" type="button" data-toggle="collapse" data-target="#struktur" aria-expanded="false" aria-controls="struktur">
+                    <button class="btn rounded-pill w-75" type="button" data-toggle="collapse" data-target="#struktur" aria-expanded="false" aria-controls="struktur">
                         <div class="row justify-content-around align-items-center">
-                            <div class="col-sm-auto text-white">
+                            <div class="col-sm-auto ">
                             <i class="fas fa-md fa-sitemap"></i>
                             </div>
-                            <div class="col-sm text-white h5 mb-0 p-0 ml-2 text-left">
+                            <div class="col-sm  h5 mb-0 p-0 ml-2 text-left">
                                 Struktur Organisasi
                             </div>
-                            <div class="col-sm-auto ml-auto" style="color:#9B9B9B">
+                            <div class="col-sm-auto ml-auto">
                                 <i class="fa fa-lg fa-chevron-circle-right"></i>
                             </div>
                         </div>
@@ -134,12 +134,12 @@ use function Composer\Autoload\includeFile;
 
         </div>
 
-                
+          <div class="modal-profil">      
         <!-- Modal Ketua -->
-        <div class="modal fade" id="modalKetua" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
+          <div class="modal fade" id="modalKetua" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -179,7 +179,7 @@ use function Composer\Autoload\includeFile;
                   </div>
                 </div>
               </div>
-
+              
         <!-- Modal Wakil Ketua -->
         <div class="modal fade" id="modalWakilKetua" tabindex="-1" role="dialog"
                 aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -227,7 +227,7 @@ use function Composer\Autoload\includeFile;
                 </div>
               </div>
 
-        <!-- Modal Sekretaris -->
+              <!-- Modal Sekretaris -->
         <div class="modal fade" id="modalSekretaris" tabindex="-1" role="dialog"
                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog " role="document">
@@ -290,7 +290,7 @@ use function Composer\Autoload\includeFile;
                   </div>
                 </div>
               </div>
-
+              
         <!-- Modal Bendahara -->
         <div class="modal fade" id="modalBendahara" tabindex="-1" role="dialog"
                 aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -355,11 +355,11 @@ use function Composer\Autoload\includeFile;
                   </div>
                 </div>
               </div>
-
-        <!-- Modal Komisi 1 -->
-        <div class="modal fade" id="modalKomisiSatu" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                <div class="modal-dialog " role="document">
+              
+              <!-- Modal Komisi 1 -->
+              <div class="modal fade" id="modalKomisiSatu" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog " role="document">
                   <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -384,11 +384,11 @@ use function Composer\Autoload\includeFile;
                         <div class="card mb-1">
                           <div class="card-body text-center">
                             <img class="photo-person"
-                              src="https://dpm.stis.ac.id/assets/img/struktur/Muhammad Guntur Ilham.jpg"
+                            src="https://dpm.stis.ac.id/assets/img/struktur/Muhammad Guntur Ilham.jpg"
                               alt="foto ketua komisi 1" />
-                          </div>
-                          <div class="popup-footer">
-                            <div class="mx-2">
+                            </div>
+                            <div class="popup-footer">
+                              <div class="mx-2">
                               <p class="nama">Muhammad Guntur Ilham</p>
                               <div>
                                 <hr class="border-top border-light m-0" />
@@ -420,8 +420,8 @@ use function Composer\Autoload\includeFile;
                               <img class="photo-person"
                                 src="https://dpm.stis.ac.id/assets/img/struktur/Farhan Ngkal Aslalsabil.jpg"
                                 alt="foto anggota komisi 1" />
-                            </div>
-                            <div class="popup-footer">
+                              </div>
+                              <div class="popup-footer">
                               <div class="mx-2">
                                 <p class="nama">Farhan Ngkal Aslalsabil</p>
                                 <div>
@@ -436,8 +436,8 @@ use function Composer\Autoload\includeFile;
                           <div class="card mb-2">
                             <div class="card-body text-center">
                               <img class="photo-person"
-                                src="https://dpm.stis.ac.id/assets/img/struktur/Ilham Dwi Kuncoro.jpg"
-                                alt="foto anggota komisi 1" />
+                              src="https://dpm.stis.ac.id/assets/img/struktur/Ilham Dwi Kuncoro.jpg"
+                              alt="foto anggota komisi 1" />
                             </div>
                             <div class="popup-footer">
                               <div class="mx-2">
@@ -2379,9 +2379,11 @@ use function Composer\Autoload\includeFile;
                   </div>
                 </div>
               </div>
-        <!-- /.container-fluid -->
-    </div>
-    <!-- End of container-fluid-->
+        
+              <!-- /.container-fluid -->
+    
+            </div>
+</div><!-- End of container-fluid-->
 </div>
 
 <?php $this->endSection(); ?>
