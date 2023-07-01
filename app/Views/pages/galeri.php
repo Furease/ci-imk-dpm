@@ -1,6 +1,40 @@
 <?php $this->extend('layout'); ?>
 <?php $this->section('content'); ?>
-
+<?php
+$data_galery = '{"foto":[
+                    {   "fotoId":1,
+                        "nama": "Foto 1",
+                        "link": "https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg",
+                        "deskripsi": "Foto Apel dari anggota DPM"
+                    },
+                    {   "fotoId":2,
+                        "nama": "Foto 2",
+                        "link": "https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg",
+                        "deskripsi": "Foto Bersama Full Squad dari DPM"
+                    },
+                    {   "fotoId":3,
+                        "nama": "Foto 3",
+                        "link": "https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg",
+                        "deskripsi": "Foto Apel dari Ketua DPM"
+                    },
+                    {   "fotoId":4,
+                        "nama": "Foto 4",
+                        "link": "https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg",
+                        "deskripsi": "Foto Apel dari DPM"
+                    },
+                    {   "fotoId":5,
+                        "nama": "Foto 5",
+                        "link": "https://dpm.stis.ac.id/assets/img/galeri/a/IMG20221119081825.jpg",
+                        "deskripsi": "Foto Sambutan dari Pak Anang"
+                    },
+                    {   "fotoId":6,
+                        "nama": "Foto 6",
+                        "link": "https://dpm.stis.ac.id/assets/img/galeri/a/IMG20221120165027.jpg",
+                        "deskripsi": "Diskusi Kepemimpinan DPM"
+                    }]}
+                    ';
+                    $data_foto = json_decode($data_galery, true);
+?>
 <!-- Begin Page Content -->
 <div id="main-context">
     <!-- Begin container-fluid -->
@@ -31,66 +65,20 @@
 
         <div class="container">
             <div class="card-columns spotlight-group">
+                
+<?php
+if(count($data_foto['foto']) != 0){
+    foreach ($data_foto['foto'] as $data) {
+       ?>
                 <div class="card shadow mb-4 gallery-out bg-birulaut">
-                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg ">
-                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg " alt="Card image 1">
+                    <a class="lightbox crop gallery-box spotlight" href="<?php echo $data['link']; ?>"  data-description="<?php echo $data['deskripsi']; ?>">
+                        <img class="card-img" src="<?php echo $data['link']; ?>" alt="<?php echo $data['nama']; ?>">
                     </a>
                 </div>
-                <div class="card shadow mb-4 gallery-out bg-birulaut">
-                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg ">
-                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg " alt="Card image 2">
-                    </a>
-                </div>
-                <div class="card shadow mb-4 gallery-out bg-birulaut">
-                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg " data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
-                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg " alt="Card image 3">
-                    </a>
-                </div>
-                <div class="card shadow mb-4 gallery-out bg-birulaut">
-                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg ">
-                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg " alt="Card image 1">
-                    </a>
-                </div>
-                <div class="card shadow mb-4 gallery-out bg-birulaut">
-                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg ">
-                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg " alt="Card image 2">
-                    </a>
-                </div>
-                <div class="card shadow mb-4 gallery-out bg-birulaut">
-                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg " data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
-                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg " alt="Card image 3">
-                    </a>
-                </div>
-                <div class="card shadow mb-4 gallery-out bg-birulaut">
-                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg ">
-                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg " alt="Card image 1">
-                    </a>
-                </div>
-                <div class="card shadow mb-4 gallery-out bg-birulaut">
-                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg ">
-                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg " alt="Card image 2">
-                    </a>
-                </div>
-                <div class="card shadow mb-4 gallery-out bg-birulaut">
-                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg " data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
-                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg " alt="Card image 3">
-                    </a>
-                </div>
-                <div class="card shadow mb-4 gallery-out bg-birulaut">
-                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg ">
-                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg " alt="Card image 1">
-                    </a>
-                </div>
-                <div class="card shadow mb-4 gallery-out bg-birulaut">
-                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg ">
-                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg " alt="Card image 2">
-                    </a>
-                </div>
-                <div class="card shadow mb-4 gallery-out bg-birulaut">
-                    <a class="lightbox crop gallery-box spotlight" href="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg " data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
-                        <img class="card-img" src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg " alt="Card image 3">
-                    </a>
-                </div>
+                <?php
+            }
+         }
+      ?>
             </div>
         </div>
         <!-- End of container-fluid -->
