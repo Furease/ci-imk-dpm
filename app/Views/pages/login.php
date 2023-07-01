@@ -27,7 +27,7 @@
         }
 
         /* input focus more elegant */
-        input[type="text"]:focus,
+        input[type="email"]:focus,
         input[type="password"]:focus,
         input[type="number"]:focus {
             border-bottom: 2px solid #5fbed6;
