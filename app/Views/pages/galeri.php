@@ -78,9 +78,9 @@ $data_foto = json_decode($data_galery, true);
     <div class="container-fluid mb-5">
         <!-- Page Heading -->
         <div class="row mb-4">
-            <h1 class="align-self-center h3 mx-2 text-gray-800">Galeri</h1>
+            <h3 class="col-sm-auto align-self-center">Galeri</h3>
             <div class="col align-self-center border-top border-primary d-none d-sm-block"></div>
-            <div class="dropdown mx-2">
+            <div class="col-sm-auto dropdown align-self-center">
                 <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Pilih Galeri
                 </button>

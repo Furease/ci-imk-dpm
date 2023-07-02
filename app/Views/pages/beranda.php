@@ -66,35 +66,15 @@ $berita = json_decode($data_news, true);
 <div class="container-fluid bg-white mb-5">
 
     <!-- Page Heading -->
-    <div class="media">
-        <div class="media-body">
-            <div class="media mt-3">
-                <div class="media-body">
-                    <h2 class="mx-0"><b>Selamat datang,</b> </h2>
-                    <h4 class="mb-3">Achmad Arfiandis Abdi Pradana</h4>
-                    <!-- <i>Mari berkenalan bersama kami.</i>
-                                    <p>
-                                        <small>Instagram : <em>@dpmpolstatstis</em> | Twitter : <em>@dpm_stis</em> |
-                                            Email : <em>@dpm.stis.ac.id</em></small>
-                                    </p> -->
-                </div>
-            </div>
-        </div>
-    </div>
+
+    <h2 class="mx-0"><b>Selamat datang,</b> </h2>
+    <h4 class="mb-3">Achmad Arfiandis Abdi Pradana</h4>
+
 
     <div class="row">
         <div class="col-sm-auto align-self-center"><b>Total Sambatan</b></div>
         <div class="col align-self-center border-top border-primary d-none d-sm-block"></div>
         <div class="col-sm-auto align-self-center dropdown">
-            <!-- dropdown input default option periode -->
-            <!-- <select class="form-control form-control-sm btn-primary border-0" id="periode">
-                 
-                <option value="" disabled selected hidden>Periode</option>
-                <option value="2022/2023">2022/2023</option>
-                <option value="2021/2022">2021/2022</option>
-                <option value="2020/2021">2020/2021</option>
-            </select> -->
-
             <button id="btn-periode" class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Periode
             </button>
@@ -289,22 +269,6 @@ $berita = json_decode($data_news, true);
                         </div>
                     </div>
                 </div>
-
-                <!-- <select class="form-control form-control-sm btn-primary" id="bulan">
-                    <option value="" selected disabled hidden>Bulan</option>
-                    <option value="0">Januari</option>
-                    <option value="1">Februari</option>
-                    <option value="2">Maret</option>
-                    <option value="3">April</option>
-                    <option value="4">Mei</option>
-                    <option value="5">Juni</option>
-                    <option value="6">Juli</option>
-                    <option value="7">Agustus</option>
-                    <option value="8">September</option>
-                    <option value="9">Oktober</option>
-                    <option value="10">November</option>
-                    <option value="11">Desember</option>
-                </select> -->
             </div>
             <div class="align-self-center dropdown mx-1">
 
@@ -333,20 +297,6 @@ $berita = json_decode($data_news, true);
                         </div>
                     </div>
                 </div>
-
-
-                <!-- <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">2020</a>
-                    <a class="dropdown-item" href="#">2021</a>
-                    <a class="dropdown-item" href="#">2022</a>
-                </div> -->
-
-                <!-- <select class="form-control form-control-sm btn-primary" id="tahun">
-                    <option value="" selected disabled hidden>Tahun</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                </select> -->
             </div>
         </div>
     </div>
@@ -383,31 +333,6 @@ $berita = json_decode($data_news, true);
                 </div>
             </div>
         <?php endforeach; ?>
-
-        <!-- 
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card bg-transparent border-0">
-                <div class="card bg-birulaut border-0 p-2">
-                    <div class="text-center img-fluid crop">
-                        <img class="card-img-top" src="" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h6 id="news-title" class="text-center"></h6>
-                        limit the paragraph so it doest take too much space
-                        <p id="news-text" class="card-text limited-text">
-                        </p>
-                        <ul class="list-group list-group-flush">
-                            <li class="bg-birulaut list-group-item align-self-center p-0">
-                                <button id="modal-btn" type="button" class="border-0 p-2 badge badge-primary view">Selengkapnya</button>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div> -->
-
-
     </div>
 </div>
 <!-- /.container-fluid -->
@@ -496,31 +421,6 @@ $berita = json_decode($data_news, true);
         $('#sambatan-pengurus').text(sambatan_pengurus + " sambatan");
 
     });
-
-    // $('#periode').change(function() {
-    //     var periode = $(this).val();
-
-    //    var data = 
-
-    //     var filteredData = data.sambatan.filter(function(item) {
-    //         return item.periode === periode;
-    //     });
-
-    //     // console.log(filteredData);
-    //     var sambatan_kampus = filteredData[0].kampus;
-    //     var sambatan_website = filteredData[0].website;
-    //     var sambatan_ormawa = filteredData[0].ormawa;
-    //     var sambatan_pengurus = filteredData[0].pengurus;
-    //     var sambatan_total = Number(sambatan_kampus) + Number(sambatan_website) + Number(sambatan_ormawa) + Number(sambatan_pengurus);
-
-    //     $('#sambatan-total').text(sambatan_total + " sambatan");
-    //     $('#sambatan-kampus').text(sambatan_kampus + " sambatan");
-    //     $('#sambatan-website').text(sambatan_website + " sambatan");
-    //     $('#sambatan-ormawa').text(sambatan_ormawa + " sambatan");
-    //     $('#sambatan-pengurus').text(sambatan_pengurus + " sambatan");
-
-    // });
-
 
     var selectedDateMonth = [];
     var selectedDateYear = [];
