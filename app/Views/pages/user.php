@@ -112,7 +112,7 @@
 
                 <div class="form-group ">
                     <label for="provider" class="col-form-label pb-0">Nomor Rekening</label>
-                    <p class="p-0 mb-1 rounded text-danger" style="font-size: 15px; background-color: #f8f9fc">
+                    <p class="p-0 mb-1 rounded text-danger" style="font-size: 15px;">
                         Pastikan rekening masih aktif
                     </p>
                     <div class="">
@@ -143,7 +143,7 @@
 
                 <div class="form-group ">
                     <label for="provider" class="pb-0 col-form-label">Atas Nama Rekening</label>
-                    <p class="p-0 m-0 rounded text-danger" style="font-size: 15px; background-color: #f8f9fc">
+                    <p class="p-0 m-0 rounded text-danger" style="font-size: 15px;">
                         Pastikan rekening atas nama pribadi
                     </p>
                     <div class="">
