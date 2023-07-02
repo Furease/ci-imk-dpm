@@ -22,7 +22,7 @@
 
                     </div>
                 </div>
-                <table id="tabelsaya" class="table">
+                <table id="tabelsaya" class="table font-barlow text-black">
                     <thead>
                         <tr class="text-dark">
                             <th scope="col">Nama</th>
