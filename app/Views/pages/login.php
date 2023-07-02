@@ -76,18 +76,16 @@
                                 <form name="myForm" class="user" action="beranda" method="get" onsubmit="return validateForm()">
                                     <div class="form-group">
                                         <!-- <label for="nim">NIM</label> -->
-                                        <input type="number" class="form-control  border-top-0 border-right-0 border-left-0" id="nim" aria-describedby="emailHelp" placeholder="NIM" style="border-radius: 0; border-bottom-width: medium">
+                                        <input type="number" class="form-control font-barlow border-top-0 border-right-0 border-left-0" id="nim" aria-describedby="emailHelp" placeholder="NIM" style="border-radius: 0; border-bottom-width: medium">
                                     </div>
+                                    <div id="alert-nim" class="alert alert-danger" style="display: none;" role="alert"></div>
+
                                     <div class="form-group">
-                                        <input type="password" class="form-control border-top-0 border-right-0 border-left-0" id="password" placeholder="Password" style="border-radius: 0; border-bottom-width: medium">
+                                        <input type="password" class="form-control font-barlow border-top-0 border-right-0 border-left-0" id="password" placeholder="Password" style="border-radius: 0; border-bottom-width: medium">
                                     </div>
-                                    <!-- <div class="form-group">
-                                <div class="custom-control custom-checkbox small">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck">
-                                    <label class="custom-control-label" for="customCheck">Remember
-                                        Me</label>
-                                </div>
-                            </div> -->
+                                    <div id="alert-password" class="alert alert-danger " style="display: none;" role="alert"></div>
+
+
                                     <button type="submit" class="btn btn-primary btn-block font-weight-bold mt-4">
                                         Masuk
                                     </button>
@@ -119,9 +117,13 @@
                                         <!-- <label for="nim">NIM</label> -->
                                         <input type="email" class="form-control  border-top-0 border-right-0 border-left-0" id="email" aria-describedby="emailHelp" placeholder="Email" style="border-radius: 0; border-bottom-width: medium">
                                     </div>
+                                    <div id="alert-email" class="alert alert-danger" style="display: none;" role="alert"></div>
+
                                     <div class="form-group">
                                         <input type="password" class="form-control border-top-0 border-right-0 border-left-0" id="password-email" placeholder="Password" style="border-radius: 0; border-bottom-width: medium">
                                     </div>
+                                    <div id="alert-password" class="alert alert-danger " style="display: none;" role="alert"></div>
+
                                     <button type="submit" class="btn btn-primary btn-block font-weight-bold mt-4">
                                         Masuk
                                     </button>
@@ -262,18 +264,13 @@
             var x = document.forms["myForm"]["nim"].value;
             var y = document.forms["myForm"]["password"].value;
             if (x == "") {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'NIM tidak boleh kosong!',
-                })
+                $('#alert-nim').text('NIM tidak boleh kosong!');
+                $('#alert-nim').show(100);
                 return false;
             } else if (y == "") {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Password tidak boleh kosong!',
-                })
+                $('#alert-password').text('Password tidak boleh kosong!');
+                $('#alert-password').show(100);
+
                 return false;
             }
         }
@@ -282,21 +279,32 @@
             var x = document.forms["myForm2"]["email"].value;
             var y = document.forms["myForm2"]["password-email"].value;
             if (x == "") {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Email tidak boleh kosong!',
-                })
+                $('#alert-email').text('Email tidak boleh kosong!');
+                $('#alert-email').show(100);
                 return false;
             } else if (y == "") {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Password tidak boleh kosong!',
-                })
+                $('#alert-password').text('Password tidak boleh kosong!');
+                $('#alert-password').show(100);
                 return false;
             }
         }
+
+        // hide on focus
+        $('#nim').focus(function() {
+            $('#alert-nim').hide(100);
+        });
+
+        $('#password').focus(function() {
+            $('#alert-password').hide(100);
+        });
+
+        $('#email').focus(function() {
+            $('#alert-email').hide(100);
+        });
+
+        $('#password-email').focus(function() {
+            $('#alert-password').hide(100);
+        });
     </script>
 
 </body>
