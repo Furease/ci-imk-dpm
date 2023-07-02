@@ -23,6 +23,9 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow:wght@200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900i" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> -->
 
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
@@ -138,12 +141,23 @@
 
         </div>
 
-        <footer class="container sticky-footer">
-            <div class=" my-auto">
-                <div class="text-center my-auto">
-                    <span>© 2023 Dewan Perwakilan Mahasiswa STIS</span>
-                </div>
+        <footer class="container sticky-footer p-1">
+
+            <div class="copyright text-center font-barlow">
+                <a class="text-decoration-none mx-2" href="">
+                    <i class="fi fi-brands-instagram text-black-50"></i>
+                </a>
+                <a class="text-decoration-none mx-2" href="">
+                    <i class="fi fi-rr-envelope text-black-50"></i>
+                </a>
+                <a class="text-decoration-none mx-2" href="">
+                    <i class="fi fi-brands-twitter text-black-50"></i>
+                </a>
+                <br>
+                <br>
+                <span>Copyright &copy; 2023 Website Kelompok 1 IMK 3SI1</span>
             </div>
+
         </footer>
     </div>
 
