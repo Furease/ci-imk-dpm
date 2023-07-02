@@ -2756,6 +2756,46 @@ fieldset:disabled a.btn {
     box-shadow: 0 0 0 0.2rem rgba(235, 101, 88, 0.5);
 }
 
+.btn-cancle {
+    color: #ff0000;
+    background-color: #ffbbb5;
+    border-color: #ffbbb5;
+}
+
+.btn-cancle:hover {
+    color: #ff0000;
+    background-color: #ff8b80;
+    border-color: #ff8b80;
+}
+
+.btn-cancle:focus,
+.btn-cancle.focus {
+    color: #ff0000;
+    background-color: #ff8b80;
+    border-color: #ff8b80;
+    box-shadow: 0 0 0 0.2rem rgba(235, 101, 88, 0.5);
+}
+
+.btn-cancle.disabled,
+.btn-cancle:disabled {
+    color: #ff0000;
+    background-color: #ff8b80;
+    border-color: #ff8b80;
+}
+
+.btn-cancle:not(:disabled):not(.disabled):active,
+.btn-cancle:not(:disabled):not(.disabled).active,
+.show>.btn-cancle.dropdown-toggle {
+    color: #ff0000;
+    background-color: #ffbbb5;
+    border-color: #ffbbb5;
+}
+
+.btn-cancle:not(:disabled):not(.disabled):active:focus,
+.btn-cancle:not(:disabled):not(.disabled).active:focus,
+.show>.btn-cancle.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(235, 101, 88, 0.5);
+}
 .btn-light {
     color: #3a3b45;
     background-color: #f8f9fc;
@@ -6059,7 +6099,7 @@ a.close.disabled {
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 0.3rem;
+    border-radius: 0.7rem;
     outline: 0;
 }
 
@@ -6087,8 +6127,8 @@ a.close.disabled {
     justify-content: space-between;
     padding: 1rem 1rem;
     border-bottom: 1px solid #e3e6f0;
-    border-top-left-radius: calc(0.3rem - 1px);
-    border-top-right-radius: calc(0.3rem - 1px);
+    border-top-left-radius: calc(0.7rem - 1px);
+    border-top-right-radius: calc(0.7rem - 1px);
 }
 
 .modal-header .close {
@@ -6114,8 +6154,8 @@ a.close.disabled {
     justify-content: flex-end;
     padding: 0.75rem;
     border-top: 1px solid #e3e6f0;
-    border-bottom-right-radius: calc(0.3rem - 1px);
-    border-bottom-left-radius: calc(0.3rem - 1px);
+    border-bottom-right-radius: calc(0.7rem - 1px);
+    border-bottom-left-radius: calc(0.7rem - 1px);
 }
 
 .modal-footer>* {
@@ -10045,7 +10085,9 @@ a.text-dark:focus {
 .text-black-50 {
     color: rgba(0, 0, 0, 0.5) !important;
 }
-
+.text-black {
+    color: rgba(0, 0, 0) !important;
+}
 .text-white-50 {
     color: rgba(255, 255, 255, 0.5) !important;
 }
