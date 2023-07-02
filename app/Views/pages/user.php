@@ -92,7 +92,7 @@
                 <div class="form-group ">
                     <label for="nohp" class=" col-form-label">Nomor Handphone</label>
                     <div class="">
-                        <input type="text" class="form-control font-barlow" id="nohp" name="nohp" value="62895367350752" required>
+                        <input type="text" class="form-control font-barlow" id="nohp" name="nohp" value="628999888777" required>
                     </div>
                 </div>
                 <div class="form-group ">
@@ -116,7 +116,7 @@
                         Pastikan rekening masih aktif
                     </p>
                     <div class="">
-                        <input type="text" class="form-control font-barlow" id="norek" name="norek" value="0332422101" required>
+                        <input type="text" class="form-control font-barlow" id="norek" name="norek" value="111222333" required>
                     </div>
                 </div>
                 <div class="form-group ">
@@ -147,7 +147,7 @@
                         Pastikan rekening atas nama pribadi
                     </p>
                     <div class="">
-                        <input type="text" class="form-control font-barlow" id="atas_nama_bank" name="atas_nama_bank" value="MOCH DAFFA' AL FARIS" required>
+                        <input type="text" class="form-control font-barlow" id="atas_nama_bank" name="atas_nama_bank" value="Achmad Arfiandis Abdi Pradana" required>
                     </div>
                 </div>
 
