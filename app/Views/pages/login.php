@@ -76,7 +76,7 @@
                                 <form name="myForm" class="user" action="beranda" method="get" onsubmit="return validateForm()">
                                     <div class="form-group">
                                         <!-- <label for="nim">NIM</label> -->
-                                        <input type="number" class="form-control font-barlow border-top-0 border-right-0 border-left-0" id="nim" aria-describedby="emailHelp" placeholder="NIM" style="border-radius: 0; border-bottom-width: medium">
+                                        <input type="text" class="form-control font-barlow border-top-0 border-right-0 border-left-0" id="nim" aria-describedby="emailHelp" placeholder="NIM" style="border-radius: 0; border-bottom-width: medium">
                                     </div>
                                     <div id="alert-nim" class="alert alert-danger" style="display: none;" role="alert"></div>
 
@@ -270,7 +270,13 @@
             } else if (y == "") {
                 $('#alert-password').text('Password tidak boleh kosong!');
                 $('#alert-password').show(100);
+                return false;
+            }
 
+            // if x not a number
+            else if (isNaN(x)) {
+                $('#alert-nim').text('NIM harus berupa angka!');
+                $('#alert-nim').show(100);
                 return false;
             }
         }
