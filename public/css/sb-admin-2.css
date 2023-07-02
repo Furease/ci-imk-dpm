@@ -2762,36 +2762,36 @@ fieldset:disabled a.btn {
 
 .btn-cancle {
     color: #ff0000;
-    background-color: #ffbbb5;
-    border-color: #ffbbb5;
+    background-color: #ffdbd6;
+    border-color: #ffdbd6;
 }
 
 .btn-cancle:hover {
     color: #ff0000;
-    background-color: #ff8b80;
-    border-color: #ff8b80;
+    background-color: #ffbbb5;
+    border-color: #ffbbb5;
 }
 
 .btn-cancle:focus,
 .btn-cancle.focus {
     color: #ff0000;
-    background-color: #ff8b80;
-    border-color: #ff8b80;
+    background-color: #ffbbb5;
+    border-color: #ffbbb5;
     box-shadow: 0 0 0 0.2rem rgba(235, 101, 88, 0.5);
 }
 
 .btn-cancle.disabled,
 .btn-cancle:disabled {
     color: #ff0000;
-    background-color: #ff8b80;
-    border-color: #ff8b80;
+    background-color: #ffbbb5;
+    border-color: #ffbbb5;
 }
 
 .btn-cancle:not(:disabled):not(.disabled):active,
 .btn-cancle:not(:disabled):not(.disabled).active,
 .show>.btn-cancle.dropdown-toggle {
     color: #ff0000;
-    background-color: #ffbbb5;
+    background-color: #ffdbd6;
     border-color: #ffbbb5;
 }
 
