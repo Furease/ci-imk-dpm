@@ -49,7 +49,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12">
-                                    <label for="untuk" class="col-form-label font-weight-bold">Di tujukan kepada</label>
+                                    <label for="untuk" class="col-form-label font-weight-bold">Di Tujukan Kepada</label>
                                     <select name="untuk" id="untuk" class="form-control">
                                         <option value="Kampus">Kampus</option>
                                         <option value="Ormawa">Ormawa</option>

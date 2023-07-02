@@ -105,7 +105,7 @@ $berita = json_decode($data_news, true);
                             <i class="fas fa-fw fa-building fa-2x text-primary"></i>
                         </div>
                         <div class="col mr-2">
-                            <div class="h6 font-weight-bold text-black text-uppercase mb-1">
+                            <div class="h6 font-weight-bold text-black mb-1 font-barlow">
                                 Kampus
                             </div>
                             <div id="sambatan-kampus" class="mb-0 text-black font-barlow">
@@ -126,7 +126,7 @@ $berita = json_decode($data_news, true);
                             <i class="fas fa-globe fa-2x text-primary"></i>
                         </div>
                         <div class="col mr-2">
-                            <div class="h6 font-weight-bold text-black text-uppercase mb-1">
+                            <div class="h6 font-weight-bold text-black mb-1 font-barlow">
                                 Website DPM
                             </div>
                             <div id="sambatan-website" class="mb-0 text-black font-barlow">
@@ -147,7 +147,7 @@ $berita = json_decode($data_news, true);
                             <i class="fas fa-sitemap fa-2x text-primary"></i>
                         </div>
                         <div class="col mr-2">
-                            <div class="h6 font-weight-bold text-black text-uppercase mb-1">
+                            <div class="h6 font-weight-bold text-black mb-1 font-barlow">
                                 Ormawa
                             </div>
                             <div class="row no-gutters align-items-center">
@@ -172,7 +172,7 @@ $berita = json_decode($data_news, true);
                             <i class="fas fa-users fa-2x text-primary"></i>
                         </div>
                         <div class="col mr-2">
-                            <div class="h6 font-weight-bold text-black text-uppercase mb-1">
+                            <div class="h6 font-weight-bold text-black mb-1 font-barlow">
                                 Pengurus Tingkat</div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
