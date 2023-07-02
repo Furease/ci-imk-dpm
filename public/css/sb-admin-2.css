@@ -439,7 +439,7 @@ h6,
 
 h7,
 .h7 {
-    font-size: 0.75rem;
+    font-size: 0.90rem;
 }
 
 .lead {
@@ -9996,7 +9996,7 @@ button.bg-dark:focus {
 }
 
 .font-weight-bold {
-    font-weight: 700 !important;
+    font-weight: 550 !important;
 }
 
 .font-weight-bolder {
