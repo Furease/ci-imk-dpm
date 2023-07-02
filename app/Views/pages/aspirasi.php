@@ -40,11 +40,12 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <form id="aspirasiForm" onsubmit="openModal()">
+                        <form name="aspirasiForm" id="aspirasiForm" onsubmit="return validateFormAspirasi()">
                             <div class="form-group">
                                 <div class="col-sm-12">
                                     <label for="dari" class="col-form-label font-weight-bold">Nama Pengirim</label>
-                                    <input type="text" class="form-control" id="dari" name="dari" required placeholder="Nama kamu, iya... kamu, boleh nama samaran">
+                                    <input type="text" class="form-control" id="dari" name="dari"  placeholder="Nama kamu, iya... kamu, boleh nama samaran">
+                                    <div id="alert-dari" class="alert alert-danger my-1" style="display: none;" role="alert"></div>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -63,7 +64,8 @@
                             <div class="form-group">
                                 <div class="col-sm-12">
                                     <label for="isi" class="col-form-label font-weight-bold">Isi Sambatan</label>
-                                    <textarea type="text" class="form-control" required id="isi" name="isi"></textarea>
+                                    <textarea type="text" class="form-control"  id="isi" name="isi"></textarea>
+                                    <div id="alert-isi" class="alert alert-danger my-1" style="display: none;" role="alert"></div>
                                 </div>
                             </div>
                             <div class="form-group">

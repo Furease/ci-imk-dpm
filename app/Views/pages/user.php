@@ -88,12 +88,13 @@
                 <h5 class="col-sm-auto align-self-center"><b>Edit Profile</b></h5>
                 <div class="col align-self-center border-top border-primary d-none d-sm-block"></div>
             </div>
-            <form id="profil-form" enctype="multipart/form-data" accept-charset="utf-8">
+            <form name="profil-form" id="profil-form" onsubmit="return validateFormProfil()" enctype="multipart/form-data" accept-charset="utf-8">
                 <div class="form-group ">
                     <label for="nohp" class=" col-form-label">Nomor Handphone</label>
                     <div class="">
-                        <input type="text" class="form-control font-barlow" id="nohp" name="nohp" value="628999888777" required>
+                        <input type="number" class="form-control font-barlow" id="nohp" name="nohp" value="628999888777">
                     </div>
+                    <div id="alert-nohp" class="alert alert-danger my-1" style="display: none;" role="alert"></div>
                 </div>
                 <div class="form-group ">
                     <label for="provider" class=" col-form-label">Provider</label>
@@ -116,8 +117,9 @@
                         Pastikan rekening masih aktif
                     </p>
                     <div class="">
-                        <input type="text" class="form-control font-barlow" id="norek" name="norek" value="111222333" required>
+                        <input type="number" class="form-control font-barlow" id="norek" name="norek" value="111222333" >
                     </div>
+                    <div id="alert-norek" class="alert alert-danger my-1" style="display: none;" role="alert"></div>
                 </div>
                 <div class="form-group ">
                     <label for="bank" class=" col-form-label" aria-label=".form-select-lg example">Bank</label>
@@ -147,8 +149,9 @@
                         Pastikan rekening atas nama pribadi
                     </p>
                     <div class="">
-                        <input type="text" class="form-control font-barlow" id="atas_nama_bank" name="atas_nama_bank" value="ACHMAD ARFIANDIS ABDI PRADANA" required>
+                        <input type="text" class="form-control font-barlow" id="atas_nama_bank" name="atas_nama_bank" value="ACHMAD ARFIANDIS ABDI PRADANA" >
                     </div>
+                    <div id="alert-atas_nama_bank" class="alert alert-danger my-1" style="display: none;" role="alert"></div>
                 </div>
 
                 <div class="form-group row justify-content-end text-right">

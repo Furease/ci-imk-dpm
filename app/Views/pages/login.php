@@ -122,7 +122,7 @@
                                     <div class="form-group">
                                         <input type="password" class="form-control border-top-0 border-right-0 border-left-0" id="password-email" placeholder="Password" style="border-radius: 0; border-bottom-width: medium">
                                     </div>
-                                    <div id="alert-password" class="alert alert-danger " style="display: none;" role="alert"></div>
+                                    <div id="alert-password-email" class="alert alert-danger " style="display: none;" role="alert"></div>
 
                                     <button type="submit" class="btn btn-primary btn-block font-weight-bold mt-4">
                                         Masuk
@@ -283,8 +283,8 @@
                 $('#alert-email').show(100);
                 return false;
             } else if (y == "") {
-                $('#alert-password').text('Password tidak boleh kosong!');
-                $('#alert-password').show(100);
+                $('#alert-password-email').text('Password tidak boleh kosong!');
+                $('#alert-password-email').show(100);
                 return false;
             }
         }
@@ -303,7 +303,7 @@
         });
 
         $('#password-email').focus(function() {
-            $('#alert-password').hide(100);
+            $('#alert-password-email').hide(100);
         });
     </script>
 

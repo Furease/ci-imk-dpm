@@ -170,16 +170,16 @@
     </script>
     <!-- modal script -->
     <script>
-        $('#aspirasiForm').on('submit', function(e) {
-            $('#aspirasiModal').modal('show');
-            e.preventDefault();
-        });
+        // $('#aspirasiForm').on('submit', function(e) {
+        //     $('#aspirasiModal').modal('show');
+        //     e.preventDefault();
+        // });
     </script>
     <script>
-        $('#profil-form').on('submit', function(e) {
-            $('#profilModal').modal('show');
-            e.preventDefault();
-        });
+        // $('#profil-form').on('submit', function(e) {
+        //     $('#profilModal').modal('show');
+        //     e.preventDefault();
+        // });
     </script>
     <!-- upload image script -->
     <script>
@@ -233,6 +233,58 @@
                 current[0].className = current[0].className.replace(" activ", "");
                 this.className += " activ";
             });
+        }
+
+
+        // validation login using action form
+        function validateFormAspirasi() {
+            var x = document.forms["aspirasiForm"]["dari"].value;
+            var y = document.forms["aspirasiForm"]["isi"].value;
+            if (x == "") {
+                $('#alert-dari').text('Nama Pengirim tidak boleh kosong!');
+                $('#alert-dari').show(100);
+                $('#alert-isi').hide(100);
+                return false;
+            } else if (y == "") {
+                $('#alert-isi').text('Isi Sambatan tidak boleh kosong!');
+                $('#alert-isi').show(100);
+                $('#alert-dari').hide(100);
+                return false;
+            } else {
+                $('#alert-dari').hide(100);
+                $('#alert-isi').hide(100);
+                $('#aspirasiModal').modal('show');
+                return false;
+            }
+        }
+
+        function validateFormProfil() {
+            var x = document.forms["profil-form"]["nohp"].value;
+            var y = document.forms["profil-form"]["norek"].value;
+            var z = document.forms["profil-form"]["atas_nama_bank"].value;
+            if (x == "") {
+                $('#alert-nohp').text('Nomor Handphone tidak boleh kosong!');
+                $('#alert-nohp').show(100);
+                $('#alert-isi').hide(100);
+                return false;
+            } else if (y == "") {
+                $('#alert-norek').text('Nomor Rekening tidak boleh kosong!');
+                $('#alert-norek').show(100);
+                $('#alert-nohp').hide(100);
+                return false;
+            } else if (z == "") {
+                $('#alert-atas_nama_bank').text('Atas Nama Rekening tidak boleh kosong!');
+                $('#alert-atas_nama_bank').show(100);
+                $('#alert-nohp').hide(100);
+                $('#alert-norek').hide(100);
+                return false;
+            } else {
+                $('#alert-nohp').hide(100);
+                $('#alert-norek').hide(100);
+                $('#alert-atas_nama_bank').hide(100);
+                $('#profilModal').modal('show');
+                return false;
+            }
         }
     </script>
 </body>
