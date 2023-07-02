@@ -62,7 +62,7 @@
                     <img class="img-fluid" src="https://dpm.stis.ac.id/assets/img/profile/dpm.svg" alt="Dewan Perwakilan Mahasiswa" width="75%">
                 </div>
                 <div class="col-lg-6">
-                    <div class="card m-4 p-5 shadow-sm">
+                    <div class="card m-4 p-4 shadow-sm">
                         <div class="text-center mb-2">
                             <h1>Selamat datang, Aspician!</h1>
 
