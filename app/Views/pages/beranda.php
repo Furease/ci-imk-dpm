@@ -87,22 +87,22 @@ $berita = json_decode($data_news, true);
         <div class="col align-self-center border-top border-primary d-none d-sm-block"></div>
         <div class="col-sm-auto align-self-center dropdown">
             <!-- dropdown input default option periode -->
-            <select class="form-control form-control-sm btn-primary border-0" id="periode">
-                <!--  placeholder periode -->
+            <!-- <select class="form-control form-control-sm btn-primary border-0" id="periode">
+                 
                 <option value="" disabled selected hidden>Periode</option>
                 <option value="2022/2023">2022/2023</option>
                 <option value="2021/2022">2021/2022</option>
                 <option value="2020/2021">2020/2021</option>
-            </select>
+            </select> -->
 
-            <!-- <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button id="btn-periode" class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Periode
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">2022/2023</a>
-                <a class="dropdown-item" href="#">2021/2022</a>
-                <a class="dropdown-item" href="#">2020/2021</a>
-            </div> -->
+                <a class="dropdown-item dropdown-periode">2022/2023</a>
+                <a class="dropdown-item dropdown-periode">2021/2022</a>
+                <a class="dropdown-item dropdown-periode">2020/2021</a>
+            </div>
         </div>
     </div>
 
@@ -458,9 +458,23 @@ $berita = json_decode($data_news, true);
 </div>
 
 <script>
-    // if dropdown periode is changed then change sambatan-total, sambatan-kampus, sambatan-website, sambatan-ormawa, sambatan-pengurus
-    $('#periode').change(function() {
-        var periode = $(this).val();
+    // hover mouse clickable in dropdown periode
+    $('.dropdown-periode').hover(function() {
+        $(this).css('cursor', 'pointer');
+    });
+
+    // hover mouse clickable in dropdown news
+    $('.custom-control-label').hover(function() {
+        $(this).css('cursor', 'pointer');
+    });
+
+
+    $('.dropdown-periode').click(function() {
+        var periode = $(this).text();
+        // active class
+        $('.dropdown-periode').removeClass('active');
+        $(this).addClass('active');
+        $('#btn-periode').text(periode);
 
         var data = <?php echo json_encode($sambatan); ?>;
 
@@ -482,6 +496,30 @@ $berita = json_decode($data_news, true);
         $('#sambatan-pengurus').text(sambatan_pengurus + " sambatan");
 
     });
+
+    // $('#periode').change(function() {
+    //     var periode = $(this).val();
+
+    //    var data = 
+
+    //     var filteredData = data.sambatan.filter(function(item) {
+    //         return item.periode === periode;
+    //     });
+
+    //     // console.log(filteredData);
+    //     var sambatan_kampus = filteredData[0].kampus;
+    //     var sambatan_website = filteredData[0].website;
+    //     var sambatan_ormawa = filteredData[0].ormawa;
+    //     var sambatan_pengurus = filteredData[0].pengurus;
+    //     var sambatan_total = Number(sambatan_kampus) + Number(sambatan_website) + Number(sambatan_ormawa) + Number(sambatan_pengurus);
+
+    //     $('#sambatan-total').text(sambatan_total + " sambatan");
+    //     $('#sambatan-kampus').text(sambatan_kampus + " sambatan");
+    //     $('#sambatan-website').text(sambatan_website + " sambatan");
+    //     $('#sambatan-ormawa').text(sambatan_ormawa + " sambatan");
+    //     $('#sambatan-pengurus').text(sambatan_pengurus + " sambatan");
+
+    // });
 
 
     var selectedDateMonth = [];
