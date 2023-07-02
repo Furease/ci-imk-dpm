@@ -343,9 +343,11 @@ $berita = json_decode($data_news, true);
             <div class="card shadow">
 
                 <div class="card-header border-0 pt-3 pb-1 d-flex flex-row align-items-center justify-content-between" style="background-color: #fff;">
-                    <h6 id="modal-title" class="m-0 font-weight-bold text-center text-gray-900 font-barlow"></h6>
-                    <div class="dropdown no-arrow">
-                        <a class="close" data-dismiss="modal" aria-label="Close">
+                    <div class="text-center mx-auto">
+                        <h6 id="modal-title" class="m-0 font-weight-bold text-center text-gray-900 font-barlow"></h6>
+                    </div>
+                    <div class="text-right">
+                        <a class="close btn" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </a>
                     </div>
