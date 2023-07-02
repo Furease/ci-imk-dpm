@@ -62,7 +62,7 @@
                     <img class="img-fluid" src="https://dpm.stis.ac.id/assets/img/profile/dpm.svg" alt="Dewan Perwakilan Mahasiswa" width="75%">
                 </div>
                 <div class="col-lg-6">
-                    <div class="card m-4 p-4 shadow-sm">
+                    <div class="card m-4 py-4 px-5 shadow-sm">
                         <div class="text-center mb-2">
                             <h1>Selamat datang, Aspician!</h1>
 
@@ -76,7 +76,7 @@
                                 <form name="myForm" class="user" action="beranda" method="get" onsubmit="return validateForm()">
                                     <div class="form-group">
                                         <!-- <label for="nim">NIM</label> -->
-                                        <input type="number" class="form-control  border-top-0 border-right-0 border-left-0" id="nim" aria-describedby="emailHelp" placeholder="Enter NIM..." style="border-radius: 0; border-bottom-width: medium">
+                                        <input type="number" class="form-control  border-top-0 border-right-0 border-left-0" id="nim" aria-describedby="emailHelp" placeholder="NIM" style="border-radius: 0; border-bottom-width: medium">
                                     </div>
                                     <div class="form-group">
                                         <input type="password" class="form-control border-top-0 border-right-0 border-left-0" id="password" placeholder="Password" style="border-radius: 0; border-bottom-width: medium">
@@ -88,8 +88,8 @@
                                         Me</label>
                                 </div>
                             </div> -->
-                                    <button type="submit" class="btn btn-primary btn-block mt-4">
-                                        Login
+                                    <button type="submit" class="btn btn-primary btn-block font-weight-bold mt-4">
+                                        Masuk
                                     </button>
                                     <hr>
                                 </form>
@@ -117,13 +117,13 @@
                                 <form name="myForm2" class="user" action="beranda" method="get" onsubmit="return validateForm2()">
                                     <div class="form-group">
                                         <!-- <label for="nim">NIM</label> -->
-                                        <input type="email" class="form-control  border-top-0 border-right-0 border-left-0" id="email" aria-describedby="emailHelp" placeholder="Enter Email Address..." style="border-radius: 0; border-bottom-width: medium">
+                                        <input type="email" class="form-control  border-top-0 border-right-0 border-left-0" id="email" aria-describedby="emailHelp" placeholder="Email" style="border-radius: 0; border-bottom-width: medium">
                                     </div>
                                     <div class="form-group">
                                         <input type="password" class="form-control border-top-0 border-right-0 border-left-0" id="password-email" placeholder="Password" style="border-radius: 0; border-bottom-width: medium">
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-block mt-4">
-                                        Login
+                                    <button type="submit" class="btn btn-primary btn-block font-weight-bold mt-4">
+                                        Masuk
                                     </button>
                                     <hr>
                                 </form>
