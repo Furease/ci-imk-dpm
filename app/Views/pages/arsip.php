@@ -5,7 +5,7 @@
     <!-- Begin Page Content -->
     <div class="container-fluid">
         <!-- Page Heading -->
-        <div class="row align-items-center justify-content-center">
+        <div class="row align-items-center justify-content-center mb-4">
             <div class="col-sm-auto">
                 <b class="h3 mb-0">Arsip Dokumen</b>
             </div>

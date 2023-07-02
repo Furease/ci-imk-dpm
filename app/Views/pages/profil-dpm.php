@@ -10,7 +10,7 @@ $this->extend('layout'); ?>
   <!-- Begin container-fluid -->
   <div class="container-fluid">
     <!-- Page Heading -->
-    <div class="row align-items-center justify-content-center">
+    <div class="row align-items-center justify-content-center mb-4">
       <div class="col-sm-auto">
         <b class="h3 mb-0">Profil DPM</b>
       </div>
