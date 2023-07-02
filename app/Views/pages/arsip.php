@@ -14,7 +14,7 @@
         <div>
             <button id="back-btn" class="btn btn-arsip d-none"><i class="fas fa-lg fa-arrow-left"></i></button>
         </div>
-        <div class="row">
+        <div class="row font-barlow">
             <div class="col-lg">
                 <input type="text" id="message" data-flashdata="" hidden>
                 <div class="row">
