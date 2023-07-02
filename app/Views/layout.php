@@ -150,8 +150,6 @@
     <script src="js/tampilmodal.js"></script>
     <script src="js/statistikreimburse.js"></script>
     <script src="js/script.js"></script>
-    <script src="../assets/datatables/dataTables.bootstrap4.js"></script>
-    <script src="assets/datatables/dataTables.bootstrap4.min.js"></script>
     <script src="assets/datatables/jquery.dataTables.min.js"></script>
     <script src="assets/datatables/jquery.dataTables.js"></script>
     <script src="js/arsipsistembaru.js"></script>
@@ -163,12 +161,7 @@
     <script src="js/tampilpengumumandiadmin.js"></script>
 
 
-    <!-- arsip -->
-    <!-- Page level plugins -->
-    <script src="assets/chart.js/Chart.min.js"></script>
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+
     <script>
         $('.custom-file-input').on('change', function() {
             let fileName = $(this).val().split('\\').pop();
