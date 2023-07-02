@@ -31,6 +31,8 @@
     <link href="assets/datatables/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css" />
 
+    <script src="assets/jquery/jquery.min.js"></script>
+
 </head>
 
 <body id="page-top">
@@ -107,7 +109,7 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="assets/jquery/jquery.min.js"></script>
+
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->

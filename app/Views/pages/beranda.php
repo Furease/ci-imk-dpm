@@ -1,6 +1,67 @@
 <?php $this->extend('layout'); ?>
 <?php $this->section('content'); ?>
 
+<?php
+
+// create dummy data json sambatan with variabel $data_complaint with atribuyt id, periode, kampus, website, ormawa, pengurus
+$data_sambatan = '{"sambatan":[
+                    {   "id":1,
+                        "periode": "2022/2023",
+                        "kampus": "40",
+                        "website": "39",
+                        "ormawa": "72",
+                        "pengurus": "36"
+                    },
+                    {   "id":2,
+                        "periode": "2021/2022",
+                        "kampus": "49",
+                        "website": "35",
+                        "ormawa": "70",
+                        "pengurus": "66"
+                    },
+                    {   "id":3,
+                        "periode": "2020/2021",
+                        "kampus": "48",
+                        "website": "37",
+                        "ormawa": "75",
+                        "pengurus": "36"
+                    }
+                ]}';
+
+// convert json to array
+$sambatan = json_decode($data_sambatan, true);
+// dd($sambatan);
+
+// create dummy data json data with variable $data_news with atribut newsId, judul, link, deskripsi, image, tanggal
+$data_news = '{"news":[
+                    {   "newsId":1,
+                        "judul": "SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS T.A. 2022/2023",
+                        "penulis": "Pengurus DPM 2022/2023",
+                        "deskripsi": "Dalam rangka Penetapan Anggaran Imapolstat dalam Sidang Umum II DPM 2022/2023, Kami mengundang rekan-rekan sekalian untuk hadir pada Sidang Umum II DPM 2022/2023 yang akan dilaksanakan pada:http://127.0.0.1:3000/aspirasi.html Hari,Tanggal: Senin, Selasa, dan Kamis, 27-28 Februari dan 2 Maret 2023 Waktu: 16.15 WIB - selesai Tempat : Auditorium Polstat STIS DC : PDA Diwajibkan kepada seluruh anggota DPM 2022/2023",
+                        "image": "https://dpm.stis.ac.id/assets/img/pengumuman/Sidang_Umum_II1.png",
+                        "tanggal": "2021-08-01"
+                    },
+                    {   "newsId":2,
+                        "judul": "PERINGATAN ISRA\' MI\'RAJ NABI MUHAMMAD SAW 1444 H",
+                        "penulis": "Pengurus DPM 2022/2023",
+                        "deskripsi": "Assalamualaikum Warahmatullahi Wabarakatuh Halo rekan-rekan Aspician Malam 27 Rajab merupakan salah satu bukti dari kebesaran Allah SWT. Melalui kuasa-Nya, Rasullah menempuh perjalan spiritual dengan jarak ribuan kilometer dari Masjidil Haram ke Masjidil Aqsa dan dilanjutkan ke Sidratul Muntaha. Perjalanan yang menembus langit ketujuh itu hanya ditempuh dalam waktu satu malam atas kekuasaan Allah SWT. Persitiwa Isra Mi\'raj hendaknya menjadi pengingat dan motivasi untuk senantiasa memperbaiki ibadah, mempertebal keimanan, dan menyempurnakan ketakwaan kepada Allah SWT. Mari jadikan momentum ini sebagai sarana untuk memperbaiki diri ke arah yang lebih baik. Semoga hikmah dari peristiwa Isra Mi\'raj dapat menjadi bekal kita di dunia dan akhirat.",
+                        "image": "https://dpm.stis.ac.id/assets/img/pengumuman/WhatsApp_Image_2023-02-18_at_14_18_44.jpeg",
+                        "tanggal": "2021-09-01"
+                    },
+                    {  "newsId":3,
+                        "judul": "SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS T.A. 2022/2023",
+                        "penulis": "Pengurus DPM 2022/2023",
+                        "deskripsi": "Dalam rangka Penetapan Anggaran Imapolstat dalam Sidang Umum II DPM 2022/2023, Kami mengundang rekan-rekan sekalian untuk hadir pada Sidang Umum II DPM 2022/2023 yang akan dilaksanakan pada:http://127.0.0.1:3000/aspirasi.html Hari,Tanggal: Senin, Selasa, dan Kamis, 27-28 Februari dan 2 Maret 2023 Waktu: 16.15 WIB - selesai Tempat : Auditorium Polstat STIS DC : PDA Diwajibkan kepada seluruh anggota DPM 2022/2023",
+                        "image": "https://dpm.stis.ac.id/assets/img/pengumuman/Sidang_Umum_II1.png",
+                        "tanggal": "2021-10-01"
+                    }
+                ]}';
+
+
+// convert json to array
+$berita = json_decode($data_news, true);
+// dd($news);
+?>
 <!-- Begin Page Content -->
 <div class="container-fluid bg-white mb-5">
 
@@ -10,7 +71,7 @@
             <div class="media mt-3">
                 <div class="media-body">
                     <h2 class="mx-0"><b>Selamat datang,</b> </h2>
-                    <h4 class="mb-3"> Douglas McGee </h4>
+                    <h4 class="mb-3">Achmad Arfiandis Abdi Pradana</h4>
                     <!-- <i>Mari berkenalan bersama kami.</i>
                                     <p>
                                         <small>Instagram : <em>@dpmpolstatstis</em> | Twitter : <em>@dpm_stis</em> |
@@ -25,19 +86,31 @@
         <div class="col-sm-auto align-self-center"><b>Total Sambatan</b></div>
         <div class="col align-self-center border-top border-primary d-none d-sm-block"></div>
         <div class="col-sm-auto align-self-center dropdown">
-            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <!-- dropdown input default option periode -->
+            <select class="form-control form-control-sm btn-primary border-0" id="periode">
+                <!--  placeholder periode -->
+                <option value="" disabled selected hidden>Periode</option>
+                <option value="2022/2023">2022/2023</option>
+                <option value="2021/2022">2021/2022</option>
+                <option value="2020/2021">2020/2021</option>
+            </select>
+
+            <!-- <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Periode
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">2022/2023</a>
                 <a class="dropdown-item" href="#">2021/2022</a>
                 <a class="dropdown-item" href="#">2020/2021</a>
-            </div>
+            </div> -->
         </div>
     </div>
 
     <p>
-        <b>420 sambatan</b>
+        <!-- total sambatan -->
+        <b id="sambatan-total">
+            <?php echo $sambatan["sambatan"][0]["kampus"] + $sambatan["sambatan"][0]["website"] + $sambatan["sambatan"][0]["ormawa"] + $sambatan["sambatan"][0]["pengurus"] ?> sambatan
+        </b>
     </p>
 
     <!-- Card Content -->
@@ -53,9 +126,10 @@
                         </div>
                         <div class="col mr-2">
                             <div class="h6 font-weight-bold text-gray-800 text-uppercase mb-1">
-                                Kampus</div>
-                            <div class="mb-0 font-weight-bold text-gray-800">
-                                325 sambatan
+                                Kampus
+                            </div>
+                            <div id="sambatan-kampus" class="mb-0 font-weight-bold text-gray-800">
+                                <?= $sambatan["sambatan"][0]["kampus"] ?> sambatan
                             </div>
                         </div>
                     </div>
@@ -73,9 +147,10 @@
                         </div>
                         <div class="col mr-2">
                             <div class="h6 font-weight-bold text-gray-800 text-uppercase mb-1">
-                                Website DPM</div>
-                            <div class="mb-0 font-weight-bold text-gray-800">
-                                3 sambatan
+                                Website DPM
+                            </div>
+                            <div id="sambatan-website" class="mb-0 font-weight-bold text-gray-800">
+                                <?= $sambatan["sambatan"][0]["website"] ?> sambatan
                             </div>
                         </div>
                     </div>
@@ -97,8 +172,8 @@
                             </div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
-                                    <div class="mb-0 mr-3 font-weight-bold text-gray-800">
-                                        48 sambatan
+                                    <div id="sambatan-ormawa" class="mb-0 mr-3 font-weight-bold text-gray-800">
+                                        <?= $sambatan["sambatan"][0]["ormawa"] ?> sambatan
                                     </div>
                                 </div>
                             </div>
@@ -121,8 +196,8 @@
                                 Pengurus Tingkat</div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
-                                    <div class="mb-0 mr-3 font-weight-bold text-gray-800">
-                                        3 sambatan
+                                    <div id="sambatan-pengurus" class="mb-0 mr-3 font-weight-bold text-gray-800">
+                                        <?= $sambatan["sambatan"][0]["pengurus"] ?> sambatan
                                     </div>
                                 </div>
                             </div>
@@ -145,52 +220,181 @@
                 <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Bulan
                 </button>
-                <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Januari</a>
-                    <a class="dropdown-item" href="#">Februari</a>
-                    <a class="dropdown-item" href="#">Maret</a>
-                    <a class="dropdown-item" href="#">April</a>
-                    <a class="dropdown-item" href="#">Mei</a>
-                    <a class="dropdown-item" href="#">Juni</a>
-                    <a class="dropdown-item" href="#">Juli</a>
-                    <a class="dropdown-item" href="#">Agustus</a>
-                    <a class="dropdown-item" href="#">September</a>
-                    <a class="dropdown-item" href="#">Oktober</a>
-                    <a class="dropdown-item" href="#">November</a>
-                    <a class="dropdown-item" href="#">Desember</a>
+                <!-- dont close when clicked  width 100% -->
+                <div style="width: 256px;" class="dropdown-menu animated--fade-in dropdown-menu-right" aria-labelledby="dropdownMenuButton" onclick="event.stopPropagation();">
+                    <!-- checkbox in dropdown -->
+                    <div class="row mx-2">
+                        <div class="col-6">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-month" id="januari" value="1">
+                                <label class="custom-control-label" for="januari">Januari</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-month" id="februari" value="2">
+                                <label class="custom-control-label" for="februari">Februari</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-month" id="maret" value="3">
+                                <label class="custom-control-label" for="maret">Maret</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-month" id="april" value="4">
+                                <label class="custom-control-label" for="april">April</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-month" id="mei" value="5">
+                                <label class="custom-control-label" for="mei">Mei</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-month" id="juni" value="6">
+                                <label class="custom-control-label" for="juni">Juni</label>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-month" id="juli" value="7">
+                                <label class="custom-control-label" for="juli">Juli</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-month" id="agustus" value="8">
+                                <label class="custom-control-label" for="agustus">Agustus</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-month" id="september" value="9">
+                                <label class="custom-control-label" for="september">September</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-month" id="oktober" value="10">
+                                <label class="custom-control-label" for="oktober">Oktober</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-month" id="november" value="11">
+                                <label class="custom-control-label" for="november">November</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-month" id="desember" value="12">
+                                <label class="custom-control-label" for="desember">Desember</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- <select class="form-control form-control-sm btn-primary" id="bulan">
+                    <option value="" selected disabled hidden>Bulan</option>
+                    <option value="0">Januari</option>
+                    <option value="1">Februari</option>
+                    <option value="2">Maret</option>
+                    <option value="3">April</option>
+                    <option value="4">Mei</option>
+                    <option value="5">Juni</option>
+                    <option value="6">Juli</option>
+                    <option value="7">Agustus</option>
+                    <option value="8">September</option>
+                    <option value="9">Oktober</option>
+                    <option value="10">November</option>
+                    <option value="11">Desember</option>
+                </select> -->
             </div>
             <div class="align-self-center dropdown mx-1">
+
                 <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Tahun
                 </button>
-                <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
+
+                <div class="dropdown-menu animated--fade-in dropdown-menu-right" aria-labelledby="dropdownMenuButton" onclick="event.stopPropagation();">
+                    <!-- checkbox in dropdown -->
+                    <div class="row mx-2">
+                        <div class="col-6">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-year" id="2020" value="2020">
+                                <label class="custom-control-label" for="2020">2020</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-year" id="2021" value="2021">
+                                <label class="custom-control-label" for="2021">2021</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-year" id="2022" value="2022">
+                                <label class="custom-control-label" for="2022">2022</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">2020</a>
                     <a class="dropdown-item" href="#">2021</a>
                     <a class="dropdown-item" href="#">2022</a>
-                </div>
+                </div> -->
+
+                <!-- <select class="form-control form-control-sm btn-primary" id="tahun">
+                    <option value="" selected disabled hidden>Tahun</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                </select> -->
             </div>
         </div>
     </div>
 
-    <div class="row">
+
+    <div id="news-container" class="row">
+        <?php foreach ($berita['news'] as $b) : ?>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card bg-transparent border-0">
+                    <div class="card bg-birulaut border-0 p-2">
+                        <div class="text-center img-fluid crop">
+                            <img class="card-img-top" src="<?= $b['image'] ?>" alt="<?= $b['judul'] ?>">
+                        </div>
+                        <div class="card-body">
+                            <h6 id="news-title" class="text-center">
+                                <?= $b["judul"] ?>
+                            </h6>
+                            <!-- limit the paragraph so it doest take too much space -->
+                            <p id="news-text" class="card-text limited-text">
+                                <?= $b["deskripsi"] ?>
+                            </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="bg-birulaut list-group-item align-self-center p-0">
+                                    <button id="modal-btn" type="button" class="border-0 p-2 badge badge-primary view">Selengkapnya</button>
+                                </li>
+                            </ul>
+
+                            <!-- hidden var  -->
+                            <input type="hidden" id="news-tanggal" value="<?= $b["tanggal"] ?>">
+                            <input type="hidden" id="news-penulis" value="<?= $b["penulis"] ?>">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+
+        <!-- 
         <div class="col-lg-4 col-md-6 mb-4">
             <div class="card bg-transparent border-0">
                 <div class="card bg-birulaut border-0 p-2">
                     <div class="text-center img-fluid crop">
-                        <img class="card-img-top" src="https://dpm.stis.ac.id/assets/img/pengumuman/Sidang_Umum_II1.png" alt="">
+                        <img class="card-img-top" src="" alt="">
                     </div>
                     <div class="card-body">
-                        <h6 id="news-title" class="text-center">SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS
-                            T.A. 2022/2023</h6>
-                        <!-- limit the paragraph so it doest take too much space -->
-                        <p id="news-text" class="card-text limited-text">Dalam rangka Penetapan Anggaran Imapolstat
-                            dalam Sidang Umum II DPM 2022/2023, Kami mengundang rekan-rekan sekalian
-                            untuk hadir pada Sidang Umum II DPM 2022/2023 yang akan dilaksanakan
-                            pada:http://127.0.0.1:3000/aspirasi.html
-                            Hari,Tanggal: Senin, Selasa, dan Kamis, 27-28 Februari dan 2 Maret 2023
-                            Waktu: 16.15 WIB - selesai Tempat : Auditorium Polstat STIS DC : PDA
-                            Diwajibkan kepada seluruh anggota DPM 2022/2023
+                        <h6 id="news-title" class="text-center"></h6>
+                        limit the paragraph so it doest take too much space
+                        <p id="news-text" class="card-text limited-text">
                         </p>
                         <ul class="list-group list-group-flush">
                             <li class="bg-birulaut list-group-item align-self-center p-0">
@@ -199,121 +403,14 @@
                         </ul>
                     </div>
 
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card bg-transparent border-0">
-                <div class="card bg-birulaut border-0 p-2">
-                    <div class="text-center img-fluid crop">
-                        <img class="card-img-top" src="https://dpm.stis.ac.id/assets/img/pengumuman/WhatsApp_Image_2023-02-18_at_14_18_44.jpeg" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h6 id="news-title" class="text-center">PERINGATAN ISRA' MI'RAJ NABI
-                            MUHAMMAD SAW 1444 H</h6>
-                        <!-- limit the paragraph so it doest take too much space -->
-                        <p id="news-text" class="card-text limited-text">Assalamualaikum Warahmatullahi Wabarakatuh Halo rekan-rekan
-                            Aspician Malam 27 Rajab merupakan salah satu bukti dari kebesaran Allah SWT.
-                            Melalui kuasa-Nya, Rasullah menempuh perjalan spiritual dengan jarak ribuan
-                            kilometer dari Masjidil Haram ke Masjidil Aqsa dan dilanjutkan ke Sidratul
-                            Muntaha. Perjalanan yang menembus langit ketujuh itu hanya ditempuh dalam
-                            waktu satu malam atas kekuasaan Allah SWT. Persitiwa Isra
-                            Mi'raj hendaknya menjadi pengingat dan motivasi untuk senantiasa memperbaiki
-                            ibadah, mempertebal keimanan, dan menyempurnakan ketakwaan kepada Allah SWT.
-                            Mari jadikan momentum ini sebagai sarana untuk memperbaiki
-                            diri ke arah yang lebih baik. Semoga hikmah dari peristiwa Isra Mi'raj dapat
-                            menjadi bekal kita di dunia dan akhirat.
-                        </p>
-                        <ul class="list-group list-group-flush">
-                            <li class="bg-birulaut list-group-item align-self-center p-0">
-                                <button id="modal-btn" type="button" class="border-0 p-2 badge badge-primary view">Selengkapnya</button>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- <div class="col-lg-4 col-md-6">
-            <div class="card bg-transparent border-light">
-                <div class="card border-primary mb-3">
-                    <div class="text-center img-fluid">
-                        <img class="card-img-top rounded-lg" src="https://dpm.stis.ac.id/assets/img/pengumuman/WhatsApp_Image_2023-02-18_at_14_18_44.jpeg" alt="" width="100">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title text-center card-header">PERINGATAN ISRA' MI'RAJ NABI
-                            MUHAMMAD SAW 1444 H</h4>
-                        <p class="card-text">Assalamualaikum Warahmatullahi Wabarakatuh Halo rekan-rekan
-                            Aspician Malam 27 Rajab merupakan salah satu bukti dari kebesaran Allah SWT.
-                            Melalui kuasa-Nya, Rasullah menempuh perjalan spiritual dengan jarak ribuan
-                            kilometer dari Masjidil Haram ke Masjidil Aqsa dan dilanjutkan ke Sidratul
-                            Muntaha. Perjalanan yang menembus langit ketujuh itu hanya ditempuh dalam
-                            waktu satu malam atas kekuasaan Allah SWT. Persitiwa Isra
-                            Mi'raj hendaknya menjadi pengingat dan motivasi untuk senantiasa memperbaiki
-                            ibadah, mempertebal keimanan, dan menyempurnakan ketakwaan kepada Allah SWT.
-                            Mari jadikan momentum ini sebagai sarana untuk memperbaiki
-                            diri ke arah yang lebih baik. Semoga hikmah dari peristiwa Isra Mi'raj dapat
-                            menjadi bekal kita di dunia dan akhirat.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Waktu Pengiriman : 2023-02-18 15:47:00</li>
-                        <li class="list-group-item">
-                            <button type="button" class="border border-light badge badge-primary view" data-target="#tampilPengumumanAdminModal" data-alt="PERINGATAN ISRA' MI'RAJ NABI MUHAMMAD SAW 1444 H" data-toggle="modal" data-image="https://dpm.stis.ac.id/assets/img/pengumuman/WhatsApp_Image_2023-02-18_at_14_18_44.jpeg">Detail
-                                Gambar</button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-            <div class="card bg-transparent border-light">
-                <div class="card border-primary mb-3">
-                    <div class="text-center img-fluid">
-                        <img class="card-img-top rounded-lg" src="https://dpm.stis.ac.id/assets/img/pengumuman/Sidang_Umum_II1.png" alt="" width="100">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title text-center card-header">SIDANG UMUM II DEWAN PERWAKILAN
-                            MAHASISWA POLSTAT STIS T.A. 2022/2023</h4>
-                        <p class="card-text">Dalam rangka Penetapan Anggaran Imapolstat dalam Sidang
-                            Umum II DPM 2022/2023, Kami mengundang rekan-rekan sekalian untuk hadir pada
-                            Sidang Umum II DPM 2022/2023 yang akan dilaksanakan
-                            pada:http://127.0.0.1:3000/aspirasi.html
-                            Hari,Tanggal: Senin, Selasa, dan Kamis, 27-28 Februari dan 2 Maret 2023
-                            Waktu: 16.15 WIB - selesai Tempat : Auditorium Polstat STIS DC : PDA
-                            Diwajibkan kepada seluruh anggota DPM 2022/2023</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Waktu Pengiriman : 2023-03-08 19:41:49</li>
-                        <li class="list-group-item">
-                            <button type="button" class="border border-light badge badge-primary view" data-target="#tampilPengumumanAdminModal" data-alt="SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS T.A. 2022/2023" data-toggle="modal" data-image="https://dpm.stis.ac.id/assets/img/pengumuman/Sidang_Umum_II1.png">Detail
-                                Gambar</button>
-                            <a href="dpm/arsipdokumen" class="btn-edit-pengumuman border border-light badge badge-warning">Lihat
-                                Link</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div> -->
+
+
     </div>
 </div>
 <!-- /.container-fluid -->
-
-<!-- Popup saat nekan tombol di pengumuman -->
-<!-- <div class="modal fade" id="tampilPengumumanAdminModal3" tabindex="-1" role="dialog" aria-labelledby="tampilPengumumanAdminModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <img class="popup_image rounded d-block w-100" src="#" alt="#">
-                <div id="modal-text">
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <div class="modal fade" id="tampilPengumumanAdminModal" tabindex="-1" role="dialog" aria-labelledby="tampilPengumumanAdminModalLabel" aria-hidden="true">
     <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
@@ -359,5 +456,140 @@
         </div>
     </div>
 </div>
+
+<script>
+    // if dropdown periode is changed then change sambatan-total, sambatan-kampus, sambatan-website, sambatan-ormawa, sambatan-pengurus
+    $('#periode').change(function() {
+        var periode = $(this).val();
+
+        var data = <?php echo json_encode($sambatan); ?>;
+
+        var filteredData = data.sambatan.filter(function(item) {
+            return item.periode === periode;
+        });
+
+        // console.log(filteredData);
+        var sambatan_kampus = filteredData[0].kampus;
+        var sambatan_website = filteredData[0].website;
+        var sambatan_ormawa = filteredData[0].ormawa;
+        var sambatan_pengurus = filteredData[0].pengurus;
+        var sambatan_total = Number(sambatan_kampus) + Number(sambatan_website) + Number(sambatan_ormawa) + Number(sambatan_pengurus);
+
+        $('#sambatan-total').text(sambatan_total + " sambatan");
+        $('#sambatan-kampus').text(sambatan_kampus + " sambatan");
+        $('#sambatan-website').text(sambatan_website + " sambatan");
+        $('#sambatan-ormawa').text(sambatan_ormawa + " sambatan");
+        $('#sambatan-pengurus').text(sambatan_pengurus + " sambatan");
+
+    });
+
+
+    var selectedDateMonth = [];
+    var selectedDateYear = [];
+    $('.filter-checkbox-month').change(function() {
+        selectedDateMonth = [];
+        console.log(selectedDateMonth);
+        $('.filter-checkbox-month:checked').each(function() {
+            selectedDateMonth.push($(this).val());
+        });
+        selectedDateMonth.forEach(function(month, index) {
+            if (month < 10) {
+                selectedDateMonth[index] = "0" + month;
+            }
+        });
+    });
+
+    $('.filter-checkbox-year').change(function() {
+        selectedDateYear = [];
+        $('.filter-checkbox-year:checked').each(function() {
+            selectedDateYear.push($(this).val());
+        });
+        console.log(selectedDateYear);
+    });
+
+    function filterData(data) {
+        // if month selected and year is not selected filter only month
+        if (selectedDateMonth.length > 0 && selectedDateYear.length == 0) {
+            selectedDateMonth.forEach(function(month) {
+                selectedDate.push(month);
+            });
+
+            var filteredData = data.news.filter(function(item) {
+                return selectedDate.includes(item.tanggal.substring(5, 7));
+            });
+        }
+
+        // if year selected and month is not selected filter only year
+        if (selectedDateMonth.length == 0 && selectedDateYear.length > 0) {
+            selectedDateYear.forEach(function(year) {
+                selectedDate.push(year);
+            });
+
+            var filteredData = data.news.filter(function(item) {
+                return selectedDate.includes(item.tanggal.substring(0, 4));
+            });
+        }
+
+        // if month and year selected filter both
+
+        if (selectedDateMonth.length > 0 && selectedDateYear.length > 0) {
+            selectedDateMonth.forEach(function(month) {
+                selectedDateYear.forEach(function(year) {
+                    selectedDate.push(year + "-" + month);
+                });
+            });
+
+            var filteredData = data.news.filter(function(item) {
+                return selectedDate.includes(item.tanggal.substring(0, 7));
+            });
+        }
+
+        // if no data then show all data
+        if (selectedDateMonth.length == 0 && selectedDateYear.length == 0) {
+            var filteredData = data.news;
+        }
+
+        return filteredData;
+    }
+
+    var selectedDate = [];
+    $('.filter-checkbox').change(function() {
+        selectedDate = [];
+
+
+        // console.log(selectedDate);
+        var data = <?php echo json_encode($berita); ?>;
+        // console.log(data);
+
+        var filteredData = filterData(data);
+
+        // console.log(filteredData);
+
+        var html = '';
+        filteredData.forEach(function(item) {
+            html += '<div class="col-lg-4 col-md-6 mb-4">';
+            html += '<div class="card bg-transparent border-0">';
+            html += '<div class="card bg-birulaut border-0 p-2">';
+            html += '<div class="text-center img-fluid crop">';
+            html += '<img class="card-img-top" src="' + item.image + '" alt="">';
+            html += '</div>';
+            html += '<div class="card-body">';
+            html += '<h6 id="news-title" class="text-center">' + item.judul + '</h6>';
+            html += '<p id="news-text" class="card-text limited-text">' + item.deskripsi + '</p>';
+            html += '<ul class="list-group list-group-flush">';
+            html += '<li class="bg-birulaut list-group-item align-self-center p-0">';
+            html += '<button id="modal-btn" type="button" class="border-0 p-2 badge badge-primary view">Selengkapnya</button>';
+            html += '</li>';
+            html += '</ul>';
+            html += '<input type="hidden" id="news-tanggal" value="' + item.tanggal + '">';
+            html += '<input type="hidden" id="news-penulis" value="' + item.penulis + '">';
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
+        });
+        $('#news-container').html(html);
+    });
+</script>
 
 <?php $this->endSection(); ?>

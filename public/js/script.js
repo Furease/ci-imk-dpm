@@ -29,15 +29,29 @@ $('.view').on('click', function () {
     // get text from parent element and above 
     const title = $(this).parents('.card').find('#news-title').text();
     const text = $(this).parents('.card').find('#news-text').text();
+    const date1 = $(this).parents('.card').find('#news-tanggal').val()
+    const writer = $(this).parents('.card').find('#news-penulis').val()
 
-    console.log(title);
-    console.log(text);
+    // translae date to indonesian
+    const date2 = new Date(date1);
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const date = date2.toLocaleDateString('id-ID', options);
+
+
+    // console.log(title);
+    // console.log(text);
+    // console.log(date);
+    // console.log(writer);
 
     // change modal content
     // $('.popup_image').attr('src', image);
     // $('.popup_image').attr('alt', alt);
     $('#modal-title').html(title);
+    $('#modal-date').html(date)
+    $('#modal-writer').html(writer)
     $('#modal-text').html(text)
+
+
     // show modal
     $('#tampilPengumumanAdminModal').modal('show');
 });
