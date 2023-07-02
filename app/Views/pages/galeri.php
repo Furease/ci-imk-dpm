@@ -81,7 +81,7 @@ $data_foto = json_decode($data_galery, true);
             <h1 class="align-self-center h3 mx-2 text-gray-800">Galeri</h1>
             <div class="col align-self-center border-top border-primary d-none d-sm-block"></div>
             <div class="dropdown mx-2">
-                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Pilih Galeri
                 </button>
                 <div class="dropdown-menu animated--fade-in" id="myBtnContainer" aria-labelledby="dropdownMenuButton">
@@ -107,13 +107,14 @@ $data_foto = json_decode($data_galery, true);
                     foreach ($data_foto['foto'] as $data) {
                         if ($data['jenis'] == "ldkm") {
                 ?>
-                        <div class="card shadow mb-4 gallery-out bg-birulaut">
-                            <a class="lightbox crop gallery-box spotlight" href="<?php echo $data['link']; ?>" data-description="<?php echo $data['deskripsi']; ?>">
-                                <img class="card-img" src="<?php echo $data['link']; ?>" alt="<?php echo $data['nama']; ?>">
-                            </a>
-                        </div>
+                            <div class="card shadow mb-4 gallery-out bg-birulaut">
+                                <a class="lightbox crop gallery-box spotlight" href="<?php echo $data['link']; ?>" data-description="<?php echo $data['deskripsi']; ?>">
+                                    <img class="card-img" src="<?php echo $data['link']; ?>" alt="<?php echo $data['nama']; ?>">
+                                </a>
+                            </div>
                 <?php
-                        }}
+                        }
+                    }
                 }
                 ?>
             </div>
@@ -123,13 +124,14 @@ $data_foto = json_decode($data_galery, true);
                     foreach ($data_foto['foto'] as $data) {
                         if ($data['jenis'] == "s1") {
                 ?>
-                        <div class="card shadow mb-4 gallery-out bg-birulaut">
-                            <a class="lightbox crop gallery-box spotlight" href="<?php echo $data['link']; ?>" data-description="<?php echo $data['deskripsi']; ?>">
-                                <img class="card-img" src="<?php echo $data['link']; ?>" alt="<?php echo $data['nama']; ?>">
-                            </a>
-                        </div>
+                            <div class="card shadow mb-4 gallery-out bg-birulaut">
+                                <a class="lightbox crop gallery-box spotlight" href="<?php echo $data['link']; ?>" data-description="<?php echo $data['deskripsi']; ?>">
+                                    <img class="card-img" src="<?php echo $data['link']; ?>" alt="<?php echo $data['nama']; ?>">
+                                </a>
+                            </div>
                 <?php
-                    }}
+                        }
+                    }
                 }
                 ?>
             </div>
@@ -139,13 +141,14 @@ $data_foto = json_decode($data_galery, true);
                     foreach ($data_foto['foto'] as $data) {
                         if ($data['jenis'] == "s2") {
                 ?>
-                        <div class="card shadow mb-4 gallery-out bg-birulaut">
-                            <a class="lightbox crop gallery-box spotlight" href="<?php echo $data['link']; ?>" data-description="<?php echo $data['deskripsi']; ?>">
-                                <img class="card-img" src="<?php echo $data['link']; ?>" alt="<?php echo $data['nama']; ?>">
-                            </a>
-                        </div>
+                            <div class="card shadow mb-4 gallery-out bg-birulaut">
+                                <a class="lightbox crop gallery-box spotlight" href="<?php echo $data['link']; ?>" data-description="<?php echo $data['deskripsi']; ?>">
+                                    <img class="card-img" src="<?php echo $data['link']; ?>" alt="<?php echo $data['nama']; ?>">
+                                </a>
+                            </div>
                 <?php
-                        }}
+                        }
+                    }
                 }
                 ?>
             </div>
@@ -155,13 +158,14 @@ $data_foto = json_decode($data_galery, true);
                     foreach ($data_foto['foto'] as $data) {
                         if ($data['jenis'] == "s3") {
                 ?>
-                        <div class="card shadow mb-4 gallery-out bg-birulaut">
-                            <a class="lightbox crop gallery-box spotlight" href="<?php echo $data['link']; ?>" data-description="<?php echo $data['deskripsi']; ?>">
-                                <img class="card-img" src="<?php echo $data['link']; ?>" alt="<?php echo $data['nama']; ?>">
-                            </a>
-                        </div>
+                            <div class="card shadow mb-4 gallery-out bg-birulaut">
+                                <a class="lightbox crop gallery-box spotlight" href="<?php echo $data['link']; ?>" data-description="<?php echo $data['deskripsi']; ?>">
+                                    <img class="card-img" src="<?php echo $data['link']; ?>" alt="<?php echo $data['nama']; ?>">
+                                </a>
+                            </div>
                 <?php
-                        }}
+                        }
+                    }
                 }
                 ?>
             </div>
@@ -171,13 +175,14 @@ $data_foto = json_decode($data_galery, true);
                     foreach ($data_foto['foto'] as $data) {
                         if ($data['jenis'] == "lain") {
                 ?>
-                        <div class="card shadow mb-4 gallery-out bg-birulaut">
-                            <a class="lightbox crop gallery-box spotlight" href="<?php echo $data['link']; ?>" data-description="<?php echo $data['deskripsi']; ?>">
-                                <img class="card-img" src="<?php echo $data['link']; ?>" alt="<?php echo $data['nama']; ?>">
-                            </a>
-                        </div>
+                            <div class="card shadow mb-4 gallery-out bg-birulaut">
+                                <a class="lightbox crop gallery-box spotlight" href="<?php echo $data['link']; ?>" data-description="<?php echo $data['deskripsi']; ?>">
+                                    <img class="card-img" src="<?php echo $data['link']; ?>" alt="<?php echo $data['nama']; ?>">
+                                </a>
+                            </div>
                 <?php
-                        }}
+                        }
+                    }
                 }
                 ?>
             </div>

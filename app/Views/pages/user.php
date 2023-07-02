@@ -25,7 +25,7 @@
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="col">
-                                <p class="mb-0">
+                                <p class="mb-0 font-barlow">
                                     <b>Email</b>
                                     <br>222011791@stis.ac.id
                                 </p>
@@ -39,7 +39,7 @@
                                 <i class="fas fa-user"></i>
                             </div>
                             <div class="col">
-                                <p class="mb-0">
+                                <p class="mb-0 font-barlow">
                                     <b>Nama</b>
                                     <br>Achmad Arfiandis Abdi Pradana
                                 </p>
@@ -67,7 +67,7 @@
                                 <i class="fas fa-users"></i>
                             </div>
                             <div class="col">
-                                <p class="mb-0">
+                                <p class="mb-0 font-barlow">
                                     <b>Kelas</b>
                                     <br>3SI1
                                 </p>
@@ -87,7 +87,7 @@
                 <div class="form-group ">
                     <label for="nohp" class=" col-form-label">Nomor Handphone</label>
                     <div class="">
-                        <input type="text" class="form-control" id="nohp" name="nohp" value="62895367350752">
+                        <input type="text" class="form-control font-barlow" id="nohp" name="nohp" value="62895367350752">
                     </div>
                 </div>
                 <div class="form-group ">
@@ -111,7 +111,7 @@
                         Pastikan rekening masih aktif
                     </p>
                     <div class="">
-                        <input type="text" class="form-control" id="norek" name="norek" value="0332422101">
+                        <input type="text" class="form-control font-barlow" id="norek" name="norek" value="0332422101">
                     </div>
                 </div>
                 <div class="form-group ">
@@ -132,7 +132,7 @@
                 <div class="form-group  d-none" id="bank-lain">
                     <label for="dari" class=" col-form-label">Nama Bank</label>
                     <div class="">
-                        <input type="text" class="form-control" name="banklain" id="bank-lain-form" value="">
+                        <input type="text" class="form-control font-barlow" name="banklain" id="bank-lain-form" value="">
                     </div>
                 </div>
 
@@ -142,7 +142,7 @@
                         Pastikan rekening atas nama pribadi
                     </p>
                     <div class="">
-                        <input type="text" class="form-control" id="atas_nama_bank" name="atas_nama_bank" value="MOCH DAFFA' AL FARIS">
+                        <input type="text" class="form-control font-barlow" id="atas_nama_bank" name="atas_nama_bank" value="MOCH DAFFA' AL FARIS">
                     </div>
                 </div>
 

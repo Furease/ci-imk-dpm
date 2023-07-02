@@ -99,16 +99,16 @@ $berita = json_decode($data_news, true);
                 Periode
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item dropdown-periode">2022/2023</a>
-                <a class="dropdown-item dropdown-periode">2021/2022</a>
-                <a class="dropdown-item dropdown-periode">2020/2021</a>
+                <a class="dropdown-item dropdown-periode font-barlow">2022/2023</a>
+                <a class="dropdown-item dropdown-periode font-barlow">2021/2022</a>
+                <a class="dropdown-item dropdown-periode font-barlow">2020/2021</a>
             </div>
         </div>
     </div>
 
     <p>
         <!-- total sambatan -->
-        <b id="sambatan-total">
+        <b id="sambatan-total" class="font-barlow">
             <?php echo $sambatan["sambatan"][0]["kampus"] + $sambatan["sambatan"][0]["website"] + $sambatan["sambatan"][0]["ormawa"] + $sambatan["sambatan"][0]["pengurus"] ?> sambatan
         </b>
     </p>
@@ -128,7 +128,7 @@ $berita = json_decode($data_news, true);
                             <div class="h6 font-weight-bold text-gray-800 text-uppercase mb-1">
                                 Kampus
                             </div>
-                            <div id="sambatan-kampus" class="mb-0 font-weight-bold text-gray-800">
+                            <div id="sambatan-kampus" class="mb-0 font-weight-bold text-gray-800 font-barlow">
                                 <?= $sambatan["sambatan"][0]["kampus"] ?> sambatan
                             </div>
                         </div>
@@ -149,7 +149,7 @@ $berita = json_decode($data_news, true);
                             <div class="h6 font-weight-bold text-gray-800 text-uppercase mb-1">
                                 Website DPM
                             </div>
-                            <div id="sambatan-website" class="mb-0 font-weight-bold text-gray-800">
+                            <div id="sambatan-website" class="mb-0 font-weight-bold text-gray-800 font-barlow">
                                 <?= $sambatan["sambatan"][0]["website"] ?> sambatan
                             </div>
                         </div>
@@ -172,7 +172,7 @@ $berita = json_decode($data_news, true);
                             </div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
-                                    <div id="sambatan-ormawa" class="mb-0 mr-3 font-weight-bold text-gray-800">
+                                    <div id="sambatan-ormawa" class="mb-0 mr-3 font-weight-bold text-gray-800 font-barlow">
                                         <?= $sambatan["sambatan"][0]["ormawa"] ?> sambatan
                                     </div>
                                 </div>
@@ -196,7 +196,7 @@ $berita = json_decode($data_news, true);
                                 Pengurus Tingkat</div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
-                                    <div id="sambatan-pengurus" class="mb-0 mr-3 font-weight-bold text-gray-800">
+                                    <div id="sambatan-pengurus" class="mb-0 mr-3 font-weight-bold text-gray-800 font-barlow">
                                         <?= $sambatan["sambatan"][0]["pengurus"] ?> sambatan
                                     </div>
                                 </div>
@@ -318,17 +318,17 @@ $berita = json_decode($data_news, true);
                         <div class="col-6">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-year" id="2020" value="2020">
-                                <label class="custom-control-label" for="2020">2020</label>
+                                <label class="custom-control-label font-barlow" for="2020">2020</label>
                             </div>
 
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-year" id="2021" value="2021">
-                                <label class="custom-control-label" for="2021">2021</label>
+                                <label class="custom-control-label font-barlow" for="2021">2021</label>
                             </div>
 
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input filter-checkbox filter-checkbox-year" id="2022" value="2022">
-                                <label class="custom-control-label" for="2022">2022</label>
+                                <label class="custom-control-label font-barlow" for="2022">2022</label>
                             </div>
                         </div>
                     </div>
@@ -361,11 +361,11 @@ $berita = json_decode($data_news, true);
                             <img class="card-img-top" src="<?= $b['image'] ?>" alt="<?= $b['judul'] ?>">
                         </div>
                         <div class="card-body">
-                            <h6 id="news-title" class="text-center">
+                            <h6 id="news-title" class="text-center font-barlow font-weight-bold text-black">
                                 <?= $b["judul"] ?>
                             </h6>
                             <!-- limit the paragraph so it doest take too much space -->
-                            <p id="news-text" class="card-text limited-text">
+                            <p id="news-text" class="card-text limited-text font-barlow">
                                 <?= $b["deskripsi"] ?>
                             </p>
                             <ul class="list-group list-group-flush">
@@ -418,7 +418,7 @@ $berita = json_decode($data_news, true);
             <div class="card shadow">
 
                 <div class="card-header border-0 pt-3 pb-1 d-flex flex-row align-items-center justify-content-between" style="background-color: #fff;">
-                    <h6 id="modal-title" class="m-0 font-weight-bold text-center text-gray-900"></h6>
+                    <h6 id="modal-title" class="m-0 font-weight-bold text-center text-gray-900 font-barlow"></h6>
                     <div class="dropdown no-arrow">
                         <a class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
@@ -431,7 +431,7 @@ $berita = json_decode($data_news, true);
                         <div class="col-6 pl-0">
                             <i class="fas fa-calendar-alt fa-sm mr-1 m-0 "></i>
                             <small>
-                                <span id="modal-date" class="text-left m-0 p-0">
+                                <span id="modal-date" class="text-left m-0 p-0 font-barlow">
                                     25 Juli 2023
                                 </span>
                             </small>
@@ -439,7 +439,7 @@ $berita = json_decode($data_news, true);
                         <div class="col-6 text-right">
                             <i class="fas fa-pen-nib fa-sm mr-1 m-0"></i>
                             <small>
-                                <span id="modal-writer" class=" m-0 p-0">
+                                <span id="modal-writer" class=" m-0 p-0 font-barlow">
                                     Pengurus DPM
                                 </span>
                             </small>
@@ -448,7 +448,7 @@ $berita = json_decode($data_news, true);
                     <!-- hr thicker -->
                     <hr class="sidebar-divider mt-1 mb-2">
                     <!-- text justify -->
-                    <div id="modal-text" class="text-justify">
+                    <div id="modal-text" class="text-justify font-barlow">
                     </div>
 
                 </div>
