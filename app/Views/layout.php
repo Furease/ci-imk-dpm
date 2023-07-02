@@ -80,9 +80,9 @@
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content px-3">
                 <div class="modal-header border-0">
-                    <h4 class="modal-title text-black" id="exampleModalLabel">Yakin Untuk Logout?</h4>
+                    <h4 class="modal-title text-black font-weight-bold" id="exampleModalLabel">Yakin Untuk Logout?</h4>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
@@ -100,9 +100,9 @@
     <!-- Aspirasi Modal-->
     <div class="modal fade" id="aspirasiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content px-3">
                 <div class="modal-header border-0">
-                    <h4 class="modal-title text-black" id="exampleModalLabel">Anda Yakin Untuk Mengirim Aspirasi?</h4>
+                    <h4 class="modal-title text-black font-weight-bold" id="exampleModalLabel">Anda Yakin Untuk Mengirim Aspirasi?</h4>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
@@ -120,9 +120,9 @@
     <!-- Profil Modal-->
     <div class="modal fade" id="profilModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content px-3">
                 <div class="modal-header border-0">
-                    <h4 class="modal-title text-black" id="exampleModalLabel">Anda Yakin Untuk Mengubah Data Diri?</h4>
+                    <h4 class="modal-title text-black font-weight-bold" id="exampleModalLabel">Yakin Buat Ubah Data Diri?</h4>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
