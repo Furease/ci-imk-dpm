@@ -27,7 +27,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
 
     <style>
