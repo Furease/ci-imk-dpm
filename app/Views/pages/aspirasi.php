@@ -8,7 +8,7 @@
 
         <!-- Page Heading -->
         <div class="row mb-4">
-            <h1 class="align-self-center h3 mx-2 text-gray-800">SI ASPIMAN</h1>
+            <h1 class="align-self-center h3 mx-2 font-weight-bold">SI ASPIMAN</h1>
             <div class="rounded-circle bg-navy mr-2"><img class="align-self-center" style="width: 40px; height: 40px;" src="img/content_canvas.png" alt="logo"></div>
             <div class="col align-self-center border-top border-primary d-none d-sm-block"></div>
         </div>
@@ -34,7 +34,7 @@
                 <div class="card mb-4 border-0">
                     <div class="card-header bg-white py-3 border-0">
                         <div class="row">
-                            <h4 class="align-self-center text-gray-800 mx-2">Form Sambatan</h4>
+                            <h4 class="align-self-center mx-2 font-weight-bold">Form Sambatan</h4>
                             <div class="col align-self-center border-top mx-2 border-primary d-none d-sm-block">
                             </div>
                         </div>
@@ -43,13 +43,13 @@
                         <form id="aspirasiForm" onsubmit="openModal()">
                             <div class="form-group">
                                 <div class="col-sm-12">
-                                    <label for="dari" class="col-form-label">Nama Pengirim</label>
+                                    <label for="dari" class="col-form-label font-weight-bold">Nama Pengirim</label>
                                     <input type="text" class="form-control" id="dari" name="dari" required placeholder="Nama kamu, iya... kamu, boleh nama samaran">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12">
-                                    <label for="untuk" class="col-form-label">Di tujukan kepada</label>
+                                    <label for="untuk" class="col-form-label font-weight-bold">Di tujukan kepada</label>
                                     <select name="untuk" id="untuk" class="form-control">
                                         <option value="Kampus">Kampus</option>
                                         <option value="Ormawa">Ormawa</option>
@@ -62,7 +62,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12">
-                                    <label for="isi" class="col-form-label">Isi Sambatan</label>
+                                    <label for="isi" class="col-form-label font-weight-bold">Isi Sambatan</label>
                                     <textarea type="text" class="form-control" required id="isi" name="isi"></textarea>
                                 </div>
                             </div>
