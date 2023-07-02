@@ -488,7 +488,7 @@ $berita = json_decode($data_news, true);
     var selectedDateYear = [];
     $('.filter-checkbox-month').change(function() {
         selectedDateMonth = [];
-        console.log(selectedDateMonth);
+        // console.log(selectedDateMonth);
         $('.filter-checkbox-month:checked').each(function() {
             selectedDateMonth.push($(this).val());
         });
@@ -504,7 +504,7 @@ $berita = json_decode($data_news, true);
         $('.filter-checkbox-year:checked').each(function() {
             selectedDateYear.push($(this).val());
         });
-        console.log(selectedDateYear);
+        // console.log(selectedDateYear);
     });
 
     function filterData(data) {
