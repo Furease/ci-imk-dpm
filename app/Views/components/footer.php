@@ -12,7 +12,7 @@
                 <i class="fi fi-brands-twitter text-black-50"></i>
             </a>
         </div>
-        <div class="copyright text-center">
+        <div class="copyright text-center font-barlow">
             <span>Copyright &copy; 2023 Website Kelompok 1 IMK 3SI1</span>
         </div>
     </div>
