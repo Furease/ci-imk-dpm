@@ -43,6 +43,10 @@ Login dapat menggunakan nim dan password bebas karena tidak terdapat validasi
 
 [222011622.student.stis.ac.id](https://222011622.student.stis.ac.id)
 
+Alternatif
+
+[https://s.stis.ac.id/3SI1-IMK-Kelompok-1](https://s.stis.ac.id/3SI1-IMK-Kelompok-1)
+
 ## Documentation
 
-[Documentation](https://linktodocumentation)
+[https://s.stis.ac.id/3SI1-IMK-Kelompok-1-Dokumen-Laporan](https://s.stis.ac.id/3SI1-IMK-Kelompok-1-Dokumen-Laporan)
