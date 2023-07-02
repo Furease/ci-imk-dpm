@@ -112,6 +112,14 @@ ul.departments li.department span.struktur {
     width: 30%;
     margin: 0 auto 0px auto;
 }
+.director>li.struktur:hover,
+.subdirector>li.struktur:hover,
+.departments>li:first-child:hover
+ {
+    opacity: 0.8;
+}
+
+
 
 .subdirector:after {
     content: "";

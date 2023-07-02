@@ -92,7 +92,7 @@
                 <div class="form-group ">
                     <label for="nohp" class=" col-form-label">Nomor Handphone</label>
                     <div class="">
-                        <input type="text" class="form-control font-barlow" id="nohp" name="nohp" value="62895367350752" required>
+                        <input type="text" class="form-control font-barlow" id="nohp" name="nohp" value="628999888777" required>
                     </div>
                 </div>
                 <div class="form-group ">
@@ -112,11 +112,11 @@
 
                 <div class="form-group ">
                     <label for="provider" class="col-form-label pb-0">Nomor Rekening</label>
-                    <p class="p-0 mb-1 rounded text-danger" style="font-size: 15px; background-color: #f8f9fc">
+                    <p class="p-0 mb-1 rounded text-danger" style="font-size: 15px;">
                         Pastikan rekening masih aktif
                     </p>
                     <div class="">
-                        <input type="text" class="form-control font-barlow" id="norek" name="norek" value="0332422101" required>
+                        <input type="text" class="form-control font-barlow" id="norek" name="norek" value="111222333" required>
                     </div>
                 </div>
                 <div class="form-group ">
@@ -143,7 +143,7 @@
 
                 <div class="form-group ">
                     <label for="provider" class="pb-0 col-form-label">Atas Nama Rekening</label>
-                    <p class="p-0 m-0 rounded text-danger" style="font-size: 15px; background-color: #f8f9fc">
+                    <p class="p-0 m-0 rounded text-danger" style="font-size: 15px;">
                         Pastikan rekening atas nama pribadi
                     </p>
                     <div class="">
