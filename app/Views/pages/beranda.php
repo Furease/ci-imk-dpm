@@ -320,7 +320,7 @@ $berita = json_decode($data_news, true);
                             </p>
                             <ul class="list-group list-group-flush">
                                 <li class="bg-birulaut list-group-item align-self-center p-0">
-                                    <button id="modal-btn" type="button" class="border-0 p-2 badge badge-primary view">Selengkapnya</button>
+                                    <button id="modal-btn" type="button" class="border-0 p-2 btn badge btn-primary view">Selengkapnya</button>
                                 </li>
                             </ul>
 
