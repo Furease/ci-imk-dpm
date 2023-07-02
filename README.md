@@ -5,7 +5,6 @@ website ini adalah redesign dari web DPM STIS diperuntukkan untuk memenuhi tugas
 ## Persyaratan Sistem
 
 - PHP versi 7.2 atau yang lebih baru.
-- Extensi PHP yang diperlukan: intl, libcurl (jika Anda ingin menggunakan cURL), gd (jika Anda ingin menggunakan fitur gambar).
 - Web server (seperti Apache atau Nginx) yang dikonfigurasi dengan PHP.
 - Composer, manajer paket PHP, terinstal di komputer Anda.
 
