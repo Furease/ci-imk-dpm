@@ -12,16 +12,16 @@
 
     <div class="row">
         <div class="col-md-6 col-lg-5">
-            <div class="card shadow mb-3">
-                <div class="card-header">
+            <div class="card shadow mb-3 bg-birulaut">
+                <div class="card-header bg-birulaut border-0">
                     <div class="text-center m-4">
-                        <img src="img/default.png" class="card-img img-fluid rounded-circle border" style="background-image: cover; max-width: 20em;">
+                        <img src="img/default.png" class="card-img img-fluid rounded-circle border" style="background-image: cover; max-width: 5em;">
                     </div>
                 </div>
                 <div class="card-body">
                     <div class="card-text">
                         <div class="row">
-                            <div class="col-2 ml-4 align-self-center">
+                            <div class="col-2 ml-4 align-self-center text-primary">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="col">
@@ -35,7 +35,7 @@
                     <hr>
                     <div class="card-text">
                         <div class="row">
-                            <div class="col-2 ml-4 align-self-center">
+                            <div class="col-2 ml-4 align-self-center text-primary">
                                 <i class="fas fa-user"></i>
                             </div>
                             <div class="col">
@@ -49,7 +49,7 @@
                     <hr>
                     <div class="card-text">
                         <div class="row">
-                            <div class="col-2 ml-4 align-self-center">
+                            <div class="col-2 ml-4 align-self-center text-primary">
                                 <i class="fas fa-id-card"></i>
                             </div>
                             <div class="col">
@@ -63,7 +63,7 @@
                     <hr>
                     <div class="card-text">
                         <div class="row">
-                            <div class="col-2 ml-4 align-self-center">
+                            <div class="col-2 ml-4 align-self-center text-primary">
                                 <i class="fas fa-users"></i>
                             </div>
                             <div class="col">
