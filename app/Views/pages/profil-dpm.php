@@ -122,8 +122,8 @@ $this->extend('layout'); ?>
         </div>
 
         <div class="collapse" id="struktur">
-          <div class="card card-body text-dark py-2">
-            <div class="ml-5 mr-3">
+          <div class="card card-body text-dark py-2 overflow-scroll">
+            <div class="mx-5" style="width: 682.15px;">
               <?php
               include '../app/Views/components/struktur-dpm.php';
               ?>
