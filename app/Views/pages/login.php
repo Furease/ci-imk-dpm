@@ -76,7 +76,7 @@
                                 <form name="myForm" class="user" action="beranda" method="get" onsubmit="return validateForm()">
                                     <div class="form-group">
                                         <!-- <label for="nim">NIM</label> -->
-                                        <input type="number" class="form-control font-barlow border-top-0 border-right-0 border-left-0" id="nim" aria-describedby="emailHelp" placeholder="NIM" style="border-radius: 0; border-bottom-width: medium">
+                                        <input type="text" class="form-control font-barlow border-top-0 border-right-0 border-left-0" id="nim" aria-describedby="emailHelp" placeholder="NIM" style="border-radius: 0; border-bottom-width: medium">
                                     </div>
                                     <div id="alert-nim" class="alert alert-danger" style="display: none;" role="alert"></div>
 
@@ -122,7 +122,7 @@
                                     <div class="form-group">
                                         <input type="password" class="form-control border-top-0 border-right-0 border-left-0" id="password-email" placeholder="Password" style="border-radius: 0; border-bottom-width: medium">
                                     </div>
-                                    <div id="alert-password" class="alert alert-danger " style="display: none;" role="alert"></div>
+                                    <div id="alert-password-email" class="alert alert-danger " style="display: none;" role="alert"></div>
 
                                     <button type="submit" class="btn btn-primary btn-block font-weight-bold mt-4">
                                         Masuk
@@ -270,7 +270,13 @@
             } else if (y == "") {
                 $('#alert-password').text('Password tidak boleh kosong!');
                 $('#alert-password').show(100);
+                return false;
+            }
 
+            // if x not a number
+            else if (isNaN(x)) {
+                $('#alert-nim').text('NIM harus berupa angka!');
+                $('#alert-nim').show(100);
                 return false;
             }
         }
@@ -283,8 +289,8 @@
                 $('#alert-email').show(100);
                 return false;
             } else if (y == "") {
-                $('#alert-password').text('Password tidak boleh kosong!');
-                $('#alert-password').show(100);
+                $('#alert-password-email').text('Password tidak boleh kosong!');
+                $('#alert-password-email').show(100);
                 return false;
             }
         }
@@ -303,7 +309,7 @@
         });
 
         $('#password-email').focus(function() {
-            $('#alert-password').hide(100);
+            $('#alert-password-email').hide(100);
         });
     </script>
 
