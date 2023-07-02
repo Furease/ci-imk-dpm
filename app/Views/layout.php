@@ -82,12 +82,12 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content px-3">
                 <div class="modal-header border-0">
-                    <h4 class="modal-title text-black font-weight-bold" id="exampleModalLabel">Yakin Untuk Logout?</h4>
+                    <h4 class="modal-title text-black font-weight-bold" id="exampleModalLabel">Yakin Untuk Keluar Akun?</h4>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body text-justify">Apabila anda yakin untuk logout anda dapat menekan tombol iya, jika anda ingin kembali ke halaman web anda bisa menekan tombol tidak.
+                <div class="modal-body text-justify">Apabila anda yakin untuk keluar dari akun ini anda dapat menekan tombol iya, jika anda ingin kembali ke halaman web anda bisa menekan tombol tidak.
                 </div>
                 <div class="modal-footer border-0 justify-content-start">
                     <a class="btn btn-cancle" href="/">Iya</a>
