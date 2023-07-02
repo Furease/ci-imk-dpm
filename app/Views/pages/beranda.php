@@ -68,7 +68,7 @@ $berita = json_decode($data_news, true);
     <!-- Page Heading -->
 
     <h2 class="mx-0"><b>Selamat datang,</b> </h2>
-    <h4 class="mb-3">Achmad Arfiandis Abdi Pradana</h4>
+    <h4 class="mb-4">Achmad Arfiandis Abdi Pradana</h4>
 
 
     <div class="row">
