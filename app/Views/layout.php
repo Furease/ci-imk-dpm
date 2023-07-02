@@ -117,6 +117,26 @@
         </div>
     </div>
 
+    <!-- Profil Modal-->
+    <div class="modal fade" id="profilModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h4 class="modal-title text-black" id="exampleModalLabel">Anda Yakin Untuk Mengubah Data Diri?</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body text-justify">Apabila anda yakin untuk mengubah data diri anda dapat menekan tombol iya, jika anda ingin kembali ke halaman web anda bisa menekan tombol tidak.
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a class="btn btn-primary" href="/user">Iya</a>
+                    <button class="btn btn-cancle" type="button" data-dismiss="modal">Tidak</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap core JavaScript-->
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -155,10 +175,23 @@
             $(this).next('.custom-file-label').addClass("selected").html(fileName);
         });
     </script>
+    <!-- modal script -->
     <script>
         $('#aspirasiForm').on('submit', function(e) {
             $('#aspirasiModal').modal('show');
             e.preventDefault();
+        });
+    </script>
+    <script>
+        $('#profil-form').on('submit', function(e) {
+            $('#profilModal').modal('show');
+            e.preventDefault();
+        });
+    </script>
+    <!-- upload image script -->
+    <script>
+        $("input[type='image']").click(function() {
+            $("input[id='my_file']").click();
         });
     </script>
 

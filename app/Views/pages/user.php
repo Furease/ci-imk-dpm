@@ -15,8 +15,13 @@
             <div class="card shadow mb-3 bg-birulaut">
                 <div class="card-header bg-birulaut border-0">
                     <div class="text-center m-4">
-                        <img src="img/default.png" class="card-img img-fluid rounded-circle border" style="background-image: cover; max-width: 5em;">
+                        <!-- <img src="img/default.png" class="card-img img-fluid rounded-circle border" style="background-image: cover; max-width: 5em;"> -->
+                        <form>
+                            <input type="image" src="img/default.png" class="card-img img-fluid rounded-circle border" style="background-image: cover; max-width: 5em;" />
+                            <input type="file" id="my_file" style="display: none;" />
+                        </form>
                     </div>
+
                 </div>
                 <div class="card-body">
                     <div class="card-text">
@@ -83,11 +88,11 @@
                 <h5 class="col-sm-auto align-self-center"><b>Edit Profile</b></h5>
                 <div class="col align-self-center border-top border-primary d-none d-sm-block"></div>
             </div>
-            <form action="" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+            <form id="profil-form" enctype="multipart/form-data" accept-charset="utf-8">
                 <div class="form-group ">
                     <label for="nohp" class=" col-form-label">Nomor Handphone</label>
                     <div class="">
-                        <input type="text" class="form-control font-barlow" id="nohp" name="nohp" value="62895367350752">
+                        <input type="text" class="form-control font-barlow" id="nohp" name="nohp" value="62895367350752" required>
                     </div>
                 </div>
                 <div class="form-group ">
@@ -111,7 +116,7 @@
                         Pastikan rekening masih aktif
                     </p>
                     <div class="">
-                        <input type="text" class="form-control font-barlow" id="norek" name="norek" value="0332422101">
+                        <input type="text" class="form-control font-barlow" id="norek" name="norek" value="0332422101" required>
                     </div>
                 </div>
                 <div class="form-group ">
@@ -142,7 +147,7 @@
                         Pastikan rekening atas nama pribadi
                     </p>
                     <div class="">
-                        <input type="text" class="form-control font-barlow" id="atas_nama_bank" name="atas_nama_bank" value="MOCH DAFFA' AL FARIS">
+                        <input type="text" class="form-control font-barlow" id="atas_nama_bank" name="atas_nama_bank" value="MOCH DAFFA' AL FARIS" required>
                     </div>
                 </div>
 
