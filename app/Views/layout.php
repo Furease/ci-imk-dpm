@@ -117,6 +117,26 @@
         </div>
     </div>
 
+    <!-- Profil Modal-->
+    <div class="modal fade" id="profilModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h4 class="modal-title text-black" id="exampleModalLabel">Anda Yakin Untuk Mengubah Data Diri?</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body text-justify">Apabila anda yakin untuk mengubah data diri anda dapat menekan tombol iya, jika anda ingin kembali ke halaman web anda bisa menekan tombol tidak.
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a class="btn btn-primary" href="/user">Iya</a>
+                    <button class="btn btn-cancle" type="button" data-dismiss="modal">Tidak</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap core JavaScript-->
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -130,8 +150,6 @@
     <script src="js/tampilmodal.js"></script>
     <script src="js/statistikreimburse.js"></script>
     <script src="js/script.js"></script>
-    <script src="../assets/datatables/dataTables.bootstrap4.js"></script>
-    <script src="assets/datatables/dataTables.bootstrap4.min.js"></script>
     <script src="assets/datatables/jquery.dataTables.min.js"></script>
     <script src="assets/datatables/jquery.dataTables.js"></script>
     <script src="js/arsipsistembaru.js"></script>
@@ -143,22 +161,30 @@
     <script src="js/tampilpengumumandiadmin.js"></script>
 
 
-    <!-- arsip -->
-    <!-- Page level plugins -->
-    <script src="assets/chart.js/Chart.min.js"></script>
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+
     <script>
         $('.custom-file-input').on('change', function() {
             let fileName = $(this).val().split('\\').pop();
             $(this).next('.custom-file-label').addClass("selected").html(fileName);
         });
     </script>
+    <!-- modal script -->
     <script>
         $('#aspirasiForm').on('submit', function(e) {
             $('#aspirasiModal').modal('show');
             e.preventDefault();
+        });
+    </script>
+    <script>
+        $('#profil-form').on('submit', function(e) {
+            $('#profilModal').modal('show');
+            e.preventDefault();
+        });
+    </script>
+    <!-- upload image script -->
+    <script>
+        $("input[type='image']").click(function() {
+            $("input[id='my_file']").click();
         });
     </script>
 

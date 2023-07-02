@@ -40,7 +40,7 @@ $this->extend('layout'); ?>
           </button>
         </div>
 
-        <div class="collapse" id="definisi">
+        <div class="collapse bg-white" id="definisi">
           <div class="card card-body text-dark py-2" style="background-color: #CDDAFF;">
             <div class="ml-5 mr-3 font-barlow">
               Merupakan organisasi internal kampus Politeknik Statistika
@@ -67,7 +67,7 @@ $this->extend('layout'); ?>
           </button>
         </div>
 
-        <div class="collapse" id="visi">
+        <div class="collapse bg-white" id="visi">
           <div class="card card-body text-dark py-2" style="background-color: #FFE3BC;">
             <div class="ml-5 mr-3">
               <strong>Visi</strong>
@@ -121,7 +121,7 @@ $this->extend('layout'); ?>
           </button>
         </div>
 
-        <div class="collapse" id="struktur">
+        <div class="collapse bg-white" id="struktur">
           <div class="card card-body text-dark py-2 overflow-scroll">
             <div class="mx-5" style="width: 682.15px;">
               <?php
