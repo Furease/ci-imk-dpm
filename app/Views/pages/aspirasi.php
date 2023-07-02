@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="card bg-birulaut mb-4 border-0">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center font-barlow">
                         <p>Fitur Aspirasi merupakan wadah bagi mahasiswa untuk memberikan <span class="font-weight-bold">sambatan</span> terbaik mereka. Sambatan itu
                             sendiri merupakan kritik atau saran yang ditujukan kepada <span class="font-weight-bold">"Kampus, Ormawa, Pengurus
                                 Tingkat, dan Lainnya"</span>.

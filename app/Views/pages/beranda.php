@@ -108,7 +108,7 @@ $berita = json_decode($data_news, true);
                             <div class="h6 font-weight-bold text-gray-800 text-uppercase mb-1">
                                 Kampus
                             </div>
-                            <div id="sambatan-kampus" class="mb-0 font-weight-bold text-gray-800 font-barlow">
+                            <div id="sambatan-kampus" class="mb-0 text-gray-800 font-barlow">
                                 <?= $sambatan["sambatan"][0]["kampus"] ?> sambatan
                             </div>
                         </div>
@@ -129,7 +129,7 @@ $berita = json_decode($data_news, true);
                             <div class="h6 font-weight-bold text-gray-800 text-uppercase mb-1">
                                 Website DPM
                             </div>
-                            <div id="sambatan-website" class="mb-0 font-weight-bold text-gray-800 font-barlow">
+                            <div id="sambatan-website" class="mb-0 text-gray-800 font-barlow">
                                 <?= $sambatan["sambatan"][0]["website"] ?> sambatan
                             </div>
                         </div>
@@ -152,7 +152,7 @@ $berita = json_decode($data_news, true);
                             </div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
-                                    <div id="sambatan-ormawa" class="mb-0 mr-3 font-weight-bold text-gray-800 font-barlow">
+                                    <div id="sambatan-ormawa" class="mb-0 mr-3 text-gray-800 font-barlow">
                                         <?= $sambatan["sambatan"][0]["ormawa"] ?> sambatan
                                     </div>
                                 </div>
@@ -176,7 +176,7 @@ $berita = json_decode($data_news, true);
                                 Pengurus Tingkat</div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
-                                    <div id="sambatan-pengurus" class="mb-0 mr-3 font-weight-bold text-gray-800 font-barlow">
+                                    <div id="sambatan-pengurus" class="mb-0 mr-3 text-gray-800 font-barlow">
                                         <?= $sambatan["sambatan"][0]["pengurus"] ?> sambatan
                                     </div>
                                 </div>
