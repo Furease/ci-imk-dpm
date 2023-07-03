@@ -311,8 +311,18 @@
         $('#password-email').focus(function() {
             $('#alert-password-email').hide(100);
         });
-    </script>
 
+        // info pertama onready login dapat menggunakan nim dan password bebas karena tidak menggunakan database
+        $(document).ready(function() {
+            Swal.fire({
+                title: 'Info',
+                text: 'Silakan masukkan NIM dan Password bebas untuk masuk ke halaman',
+                icon: 'info',
+                confirmButtonText: 'OK',
+                confirmButtonColor: '#3085d6',
+            })
+        });
+    </script>
 </body>
 
 </html>
