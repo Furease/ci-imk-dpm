@@ -316,7 +316,7 @@
         $(document).ready(function() {
             Swal.fire({
                 title: 'Info',
-                text: 'Silakan masukkan NIM dan Password bebas untuk masuk ke halaman',
+                text: 'Silakan masukkan NIM dan Password bebas untuk masuk ke halaman sebagai percobaan',
                 icon: 'info',
                 confirmButtonText: 'OK',
                 confirmButtonColor: '#3085d6',
